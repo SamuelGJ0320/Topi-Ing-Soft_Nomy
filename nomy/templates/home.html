@@ -1,3 +1,25 @@
 <!-- <h1>Welcome to Home Page</h1> -->
 <h1>Welcome to Home Page, <font color = '#3485a9' >{{name}}</font></h1>
 <h2>This is the full home page</h2>
+
+<div class="container">
+    <form action="">
+        <div class="mb-3">
+            <label for="searchNomy" class="form-label">
+                Search for Nomy:
+            </label>
+            <input type="text" class="form-control" name="searchNomy"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <p>Searching for {{searchTerm}}</p>
+        {% for nomy in nomys %}
+                <h2>{{ nomy.title}}</h2>
+                <h3>{{ nomy.description}}</h3>
+                <img src="{{ nomy.image.url }}">
+                {% if nomy.url %}
+                    <a href="{{ nomy.url }}"> Nomy Link </a>
+                {% endif %}
+        {% endfor %}
+    <br7/>
+</div>
