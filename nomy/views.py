@@ -19,3 +19,11 @@ def home(request):
 def about(request):
     #return HttpResponse('<h1>Welcome to About Page</h1>')
     return render(request,'about.html')
+
+def login(request):
+    #return HttpResponse('<h1>Welcome to Login Page</h1>')
+    return render(request,'login.html')
+
+def register(request):
+    #return HttpResponse('<h1>Welcome to Register Page</h1>')
+    return render(request,'register.html')
