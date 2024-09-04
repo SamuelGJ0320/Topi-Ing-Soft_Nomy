@@ -1,10 +1,7 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from django.forms import inlineformset_factory
-from django.contrib.auth.forms import UserCreationForm
-
+from django.contrib.auth import authenticate, login, logout
 from .models import Nomy
-from .forms import NomyForm, CreateUserForm
+from .forms import CreateUserForm
 from django.contrib import messages
 
 from django.contrib.auth import authenticate, login, logout
@@ -12,9 +9,6 @@ from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 
 def home(request):
-    #return HttpResponse('<h1>Welcome to Home Page</h1>')
-    #return render(request, 'home.html')
-    #return render(request,'home.html', {'name':'Samuel Gutierrez'})
     searchTerm = request.GET.get('searchNomy')
     if searchTerm:
         nomys = Nomy.objects.filter(title__icontains=searchTerm)
@@ -23,14 +17,12 @@ def home(request):
     return render(request,'home.html', {'searchTerm':searchTerm, 'nomys': nomys})
 
 def about(request):
-    #return HttpResponse('<h1>Welcome to About Page</h1>')
     return render(request,'about.html')
 
 def map(request):
     return render(request,'map.html')
 
 def loginPage(request):
-    #return HttpResponse('<h1>Welcome to Login Page</h1>')
 
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -43,17 +35,16 @@ def loginPage(request):
             return redirect('http://127.0.0.1:8000/')
         
         else:
-            messages.info(request,'Username or Password is incorrect')
+            return render(request,'login.html', {'error':'Username or Password is incorrect'})
         
-    context = {}
-    return render(request,'login.html', context)
+    else:
+        return render(request,'login.html')
 
 def logoutUser(request):
     logout(request)
     return redirect('http://127.0.0.1:8000/login/')
 
 def register(request):
-    #return HttpResponse('<h1>Welcome to Register Page</h1>')
     form = CreateUserForm()
 
     if request.method == 'POST':
