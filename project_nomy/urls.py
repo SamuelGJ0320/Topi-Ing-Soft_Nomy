@@ -28,6 +28,7 @@ urlpatterns = [
     path('login/', project_Nomy.login, name='login'),
     path('register/', project_Nomy.register, name='register'),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('map/', project_Nomy.map, name='map'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

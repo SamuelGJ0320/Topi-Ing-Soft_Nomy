@@ -26,6 +26,9 @@ def about(request):
     #return HttpResponse('<h1>Welcome to About Page</h1>')
     return render(request,'about.html')
 
+def map(request):
+    return render(request,'map.html')
+
 def loginPage(request):
     #return HttpResponse('<h1>Welcome to Login Page</h1>')
 
