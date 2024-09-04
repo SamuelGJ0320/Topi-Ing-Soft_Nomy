@@ -3,7 +3,6 @@ from django.contrib.auth import authenticate, login, logout
 from .models import Nomy
 from .forms import CreateUserForm
 from django.contrib import messages
-
 from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
@@ -35,10 +34,9 @@ def loginPage(request):
             return redirect('http://127.0.0.1:8000/')
         
         else:
-            return render(request,'login.html', {'error':'Username or Password is incorrect'})
+            messages.info(request,'Username OR password is incorrect')
         
-    else:
-        return render(request,'login.html')
+    return render(request,'login.html')
 
 def logoutUser(request):
     logout(request)
