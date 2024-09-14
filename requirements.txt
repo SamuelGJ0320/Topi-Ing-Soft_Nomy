@@ -1,0 +1,9 @@
+# A instalar 
+Django #Framework that allows to build web applications
+SQLite #Database that came with Django
+django-crispy-forms #To make forms look better
+pillow #To work with images and you can install it with pip install pillow
+
+#Librerías de front-end utilizadas en los templates (no se instalan vía pip, pero son dependencias externas que se cargan en los archivos HTML):
+Bootstrap #Fframwork that make the web look better
+Leaflet #Library of JavaScript that we use to show the map though the web of open street map
