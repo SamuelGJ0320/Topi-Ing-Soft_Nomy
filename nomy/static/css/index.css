@@ -107,8 +107,7 @@ header a:hover {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                      url("imagenes/Historial-clinico.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
