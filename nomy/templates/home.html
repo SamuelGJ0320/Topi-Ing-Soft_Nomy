@@ -56,6 +56,16 @@
             text-align: center;
         }
 
+        .favorite-star {
+            font-size: 24px;
+            cursor: pointer;
+            color: gray;
+        }
+        .favorite-star.active {
+            color: gold;
+        }
+
+
         footer {
             text-align: center;
             padding: 20px;
@@ -159,9 +169,25 @@
             { id: 50, nombre: 'Parrilladas del Valle', latitud: 6.245111, longitud: -75.566789 }
         ]
 
+        // Crear el contenido del popup con la estrella de favorito
+        function createPopupContent(nombre, id) {
+            return `
+                <div>
+                    <h4>${nombre}</h4>
+                    <span id="star-${id}" class="favorite-star" onclick="toggleFavorite(${id})">★</span>
+                </div>
+            `;
+        }
+
+        // Alternar el estado de favorito
+        function toggleFavorite(id) {
+            var star = document.getElementById(`star-${id}`);
+            star.classList.toggle('active');
+        }
+
         //Crear los marcadores de los restaurantes para mostrar en el mapa
         for (var i = 0; i < restaurante.length; i++) {
-            L.marker([restaurante[i].latitud, restaurante[i].longitud]).addTo(map).bindPopup(restaurante[i].nombre).openPopup();
+            L.marker([restaurante[i].latitud, restaurante[i].longitud]).addTo(map).bindPopup(createPopupContent(restaurante[i].nombre, restaurante[i].id));
         }
         
 
