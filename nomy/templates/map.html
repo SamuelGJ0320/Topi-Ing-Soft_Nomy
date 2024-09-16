@@ -9,15 +9,7 @@
     <style>
         #mi_mapa {
             height: 600px;
-            width: 100%;
-        }
-        .favorite-star {
-            font-size: 24px;
-            cursor: pointer;
-            color: gray;
-        }
-        .favorite-star.active {
-            color: gold;
+            width: 1400px;
         }
     </style>
 </head>
@@ -27,45 +19,13 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script>
-        // Inicializa el mapa
-        var map = L.map('mi_mapa').setView([6.24440, -75.57358], 14);
+        let map = L.map('mi_mapa').setView([6.24440, -75.57358], 14)
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // Lista de restaurantes
-        var restaurante = [
-            { id: 1, nombre: 'El Poblado Gourmet', latitud: 6.244203, longitud: -75.581212 },
-            { id: 2, nombre: 'Cocina Paisa', latitud: 6.253040, longitud: -75.564573 },
-            { id: 3, nombre: 'La Parrilla del Barrio', latitud: 6.268343, longitud: -75.566273 },
-            { id: 4, nombre: 'Fonda Antioqueña', latitud: 6.256205, longitud: -75.590378 },
-            { id: 5, nombre: 'El Rincón Paisa', latitud: 6.239555, longitud: -75.580307 },
-            // Añade más restaurantes si es necesario
-        ];
-
-        // Crear el contenido del popup con la estrella de favorito
-        function createPopupContent(nombre, id) {
-            return `
-                <div>
-                    <h4>${nombre}</h4>
-                    <span id="star-${id}" class="favorite-star" onclick="toggleFavorite(${id})">★</span>
-                </div>
-            `;
-        }
-
-        // Alternar el estado de favorito
-        function toggleFavorite(id) {
-            var star = document.getElementById(`star-${id}`);
-            star.classList.toggle('active');
-        }
-
-        // Crear los marcadores y los popups para cada restaurante
-        restaurante.forEach(function(restaurantes) {
-            L.marker([restaurantes.latitud, restaurantes.longitud])
-                .addTo(map)
-                .bindPopup(createPopupContent(restaurantes.nombre, restaurantes.id));
-        });
+        //Estructura marcador: L.marker([--Coordenadas--]).addTo(map).bindPopup("--Texto--").openPopup();
     </script>
 </body>
 </html>
