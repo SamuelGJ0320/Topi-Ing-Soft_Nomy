@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "nombre": "El Poblado Gourmet",
+        "latitud": 6.244203,
+        "longitud": -75.581212,
+        "description": "El Poblado Gourmet es un restaurante que destaca por su ambiente acogedor y elegante, perfecto para una cena rom\u00e1ntica o una comida de negocios. Ubicado en el coraz\u00f3n de El Poblado, en Medell\u00edn, este establecimiento ofrece una propuesta gastron\u00f3mica de alta calidad que combina la cocina tradicional colombiana con toques de la cocina internacional.\n\nLos platos del men\u00fa son elaborados con ingredientes frescos y de primera calidad, lo que se refleja en su exquisito sabor y presentaci\u00f3n impecable. Destacan especialmente sus carnes a la parrilla, sus pescados frescos y sus deliciosos postres caseros.\n\nEl servicio es atento y profesional, garantizando una experiencia culinaria inolvidable para todos los comensales. Adem\u00e1s, el restaurante cuenta con una amplia carta de vinos y licores para acompa\u00f1ar la comida.\n\nEn resumen, El Poblado Gourmet es una excelente opci\u00f3n para aquellos que buscan disfrutar de una comida gourmet en un ambiente sofisticado y acogedor en el coraz\u00f3n de Medell\u00edn."
+    },
+    {
+        "id": 2,
+        "nombre": "Cocina Paisa",
+        "latitud": 6.25304,
+        "longitud": -75.564573,
+        "description": "Cocina Paisa es un restaurante que ofrece aut\u00e9ntica comida colombiana en un ambiente acogedor y familiar. Ubicado en el coraz\u00f3n de la ciudad, este lugar se destaca por su excelente servicio y deliciosa comida casera.\n\nLos platos t\u00edpicos de la regi\u00f3n paisa son el plato fuerte de este restaurante, con opciones como bandeja paisa, sancocho, arepas y empanadas que deleitan el paladar de los comensales. La presentaci\u00f3n de los platos es impecable y la calidad de los ingredientes es evidente en cada bocado.\n\nEl ambiente del restaurante es c\u00e1lido y acogedor, con una decoraci\u00f3n sencilla pero elegante que invita a los clientes a sentirse como en casa. El personal es amable y atento, siempre dispuesto a recomendar los platos m\u00e1s populares y a asegurarse de que la experiencia culinaria sea inolvidable.\n\nEn resumen, Cocina Paisa es el lugar perfecto para disfrutar de aut\u00e9ntica comida colombiana en un ambiente agradable y familiar. Sin duda, una excelente opci\u00f3n para aquellos que buscan una experiencia gastron\u00f3mica \u00fanica y deliciosa."
+    },
+    {
+        "id": 3,
+        "nombre": "La Parrilla del Barrio",
+        "latitud": 6.268343,
+        "longitud": -75.566273,
+        "description": "La Parrilla del Barrio es un acogedor restaurante ubicado en el coraz\u00f3n de la ciudad, especializado en cocina argentina. Su ambiente r\u00fastico y familiar lo convierte en el lugar perfecto para disfrutar de una deliciosa comida en compa\u00f1\u00eda de amigos o familiares.\n\nLa estrella del men\u00fa son, sin duda, las parrilladas, con una amplia variedad de cortes de carne de primera calidad, perfectamente cocinados a la parrilla y acompa\u00f1ados de deliciosas guarniciones. Adem\u00e1s, ofrecen una selecci\u00f3n de entradas y platos principales que van desde empanadas y choripanes hasta pastas y pescados frescos.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los platos m\u00e1s destacados de la carta. El ambiente es c\u00e1lido y acogedor, con una decoraci\u00f3n que evoca la tradici\u00f3n argentina.\n\nEn resumen, La Parrilla del Barrio es el lugar ideal para los amantes de la carne y la cocina argentina, donde podr\u00e1s disfrutar de una experiencia gastron\u00f3mica aut\u00e9ntica y deliciosa."
+    },
+    {
+        "id": 4,
+        "nombre": "Fonda Antioque\u00f1a",
+        "latitud": 6.256205,
+        "longitud": -75.590378,
+        "description": "La Fonda Antioque\u00f1a es un restaurante tradicional colombiano ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar te transporta directamente a las calles de Medell\u00edn. \n\nSu men\u00fa ofrece una amplia variedad de platos t\u00edpicos antioque\u00f1os, como la bandeja paisa, el ajiaco, la arepa de choclo y la morcilla. Todos los platos est\u00e1n preparados con ingredientes frescos y de alta calidad, lo que se refleja en su delicioso sabor y presentaci\u00f3n.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los platos m\u00e1s populares o a adaptarse a tus preferencias alimenticias. Adem\u00e1s, el ambiente es animado y familiar, perfecto para disfrutar de una comida con amigos o en familia.\n\nEn resumen, la Fonda Antioque\u00f1a es una excelente opci\u00f3n para aquellos que buscan disfrutar de la aut\u00e9ntica comida colombiana en un ambiente acogedor y tradicional. \u00a1No te arrepentir\u00e1s de visitar este encantador restaurante!"
+    },
+    {
+        "id": 5,
+        "nombre": "El Rinc\u00f3n Paisa",
+        "latitud": 6.239555,
+        "longitud": -75.580307,
+        "description": "El Rinc\u00f3n Paisa es un acogedor restaurante colombiano ubicado en el coraz\u00f3n de la ciudad. Su ambiente r\u00fastico y familiar te transporta directamente a las calles de Colombia, con su decoraci\u00f3n colorida y m\u00fasica tradicional que crea una atm\u00f3sfera alegre y acogedora.\n\nLa carta ofrece una amplia variedad de platos t\u00edpicos colombianos, desde bandeja paisa hasta arepas rellenas y sancocho. Los sabores aut\u00e9nticos y las porciones generosas hacen que cada bocado sea una experiencia deliciosa y reconfortante.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los platos m\u00e1s populares y a asegurarse de que tu experiencia sea inolvidable. Adem\u00e1s, el precio es muy accesible, lo que lo convierte en una excelente opci\u00f3n para disfrutar de la aut\u00e9ntica comida colombiana sin gastar una fortuna.\n\nEn resumen, El Rinc\u00f3n Paisa es un lugar perfecto para disfrutar de una deliciosa comida casera colombiana en un ambiente c\u00e1lido y acogedor. \u00a1No te lo puedes perder!"
+    },
+    {
+        "id": 6,
+        "nombre": "Delicias de Medell\u00edn",
+        "latitud": 6.24834,
+        "longitud": -75.558627,
+        "description": "Delicias de Medell\u00edn es un restaurante que ofrece una experiencia culinaria aut\u00e9ntica y deliciosa de la cocina colombiana. Ubicado en el coraz\u00f3n de la ciudad, este acogedor establecimiento se destaca por su ambiente acogedor y su excelente servicio.\n\nLa carta de Delicias de Medell\u00edn ofrece una amplia variedad de platos tradicionales colombianos, como bandeja paisa, sancocho, arepas, empanadas y ajiaco, todos preparados con ingredientes frescos y de alta calidad. Los sabores son aut\u00e9nticos y deliciosos, transportando a los comensales a las calles de Medell\u00edn con cada bocado.\n\nAdem\u00e1s de la comida, el restaurante tambi\u00e9n cuenta con una selecci\u00f3n de bebidas t\u00edpicas colombianas, como aguapanela y jugos naturales, que complementan perfectamente cada plato.\n\nEn resumen, Delicias de Medell\u00edn es un lugar ideal para disfrutar de la aut\u00e9ntica cocina colombiana en un ambiente acogedor y familiar. Sin duda, una visita obligada para los amantes de la gastronom\u00eda tradicional."
+    },
+    {
+        "id": 7,
+        "nombre": "Asados Do\u00f1a Rosa",
+        "latitud": 6.244865,
+        "longitud": -75.574241,
+        "description": "Asados Do\u00f1a Rosa es un restaurante de comida tradicional argentina ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar te transporta a la pampa argentina desde el momento en que entras por la puerta. \n\nSu especialidad son los asados a la parrilla, con cortes de carne de primera calidad y un sabor inigualable. Adem\u00e1s, ofrecen una variedad de platos t\u00edpicos como empanadas, choripanes y milanesas, todos preparados con ingredientes frescos y sabrosos.\n\nEl servicio es impecable, con un personal atento y amable que se asegura de que tu experiencia en el restaurante sea inolvidable. Adem\u00e1s, cuentan con una extensa carta de vinos argentinos para maridar perfectamente con tu comida.\n\nEn resumen, Asados Do\u00f1a Rosa es el lugar perfecto para los amantes de la carne y la comida argentina, con un ambiente c\u00e1lido y familiar que te har\u00e1 sentir como en casa. \u00a1No te lo puedes perder!"
+    },
+    {
+        "id": 8,
+        "nombre": "La Estancia Campestre",
+        "latitud": 6.241251,
+        "longitud": -75.582703,
+        "description": "La Estancia Campestre es un encantador restaurante ubicado en las afueras de la ciudad, rodeado de hermosos jardines y un ambiente campestre que invita a relajarse y disfrutar de una deliciosa comida. Su decoraci\u00f3n r\u00fastica y acogedora crea un ambiente c\u00e1lido y familiar, perfecto para una comida tranquila y agradable.\n\nLa carta ofrece una amplia variedad de platos tradicionales de la cocina argentina, destacando sus exquisitas carnes a la parrilla, jugosas y llenas de sabor. Adem\u00e1s, cuentan con una excelente selecci\u00f3n de vinos para maridar cada platillo y realzar los sabores.\n\nEl servicio es impecable, con un personal atento y amable que se asegura de que cada cliente se sienta bienvenido y bien atendido. La calidad de los ingredientes y la atenci\u00f3n al detalle en la preparaci\u00f3n de cada plato hacen de La Estancia Campestre una excelente opci\u00f3n para disfrutar de una experiencia gastron\u00f3mica \u00fanica y memorable. Sin duda, un lugar ideal para disfrutar de una comida especial en un entorno tranquilo y encantador."
+    },
+    {
+        "id": 9,
+        "nombre": "Brasa y Sabor",
+        "latitud": 6.230472,
+        "longitud": -75.575583,
+        "description": "Brasa y Sabor es un acogedor restaurante que ofrece una experiencia culinaria \u00fanica en la ciudad. Con una decoraci\u00f3n r\u00fastica y ambiente acogedor, este lugar es perfecto para disfrutar de una deliciosa comida en compa\u00f1\u00eda de amigos o familiares.\n\nLa especialidad de la casa son las carnes a la brasa, que se cocinan a la perfecci\u00f3n y se sirven jugosas y llenas de sabor. Adem\u00e1s, cuentan con una amplia variedad de platos tradicionales de la cocina espa\u00f1ola, como paellas, tapas y pescados frescos.\n\nEl servicio es impecable, con un personal atento y amable que se asegura de que cada cliente se sienta como en casa. Adem\u00e1s, la carta de vinos es extensa y ofrece opciones para todos los gustos.\n\nEn resumen, Brasa y Sabor es un restaurante que combina una excelente comida, un ambiente acogedor y un servicio de primera calidad. Sin duda, una visita obligada para los amantes de la buena gastronom\u00eda."
+    },
+    {
+        "id": 10,
+        "nombre": "Cocina de Monta\u00f1a",
+        "latitud": 6.255349,
+        "longitud": -75.574356,
+        "description": "Cocina de Monta\u00f1a es un restaurante acogedor y encantador ubicado en las monta\u00f1as, que ofrece una experiencia gastron\u00f3mica \u00fanica. Con una decoraci\u00f3n r\u00fastica y c\u00e1lida, este lugar te transporta a un ambiente acogedor y familiar desde el momento en que entras por la puerta.\n\nLa cocina de Cocina de Monta\u00f1a se destaca por ofrecer platos tradicionales de la regi\u00f3n, con ingredientes frescos y de alta calidad. Desde sus deliciosas sopas caseras hasta sus exquisitos platos principales, cada bocado est\u00e1 lleno de sabor y amor por la cocina.\n\nEl servicio es impecable, con un personal atento y amable que se asegura de que tu experiencia sea inolvidable. Adem\u00e1s, la carta de vinos es extensa y bien seleccionada, perfecta para maridar con los platos del men\u00fa.\n\nEn resumen, Cocina de Monta\u00f1a es el lugar perfecto para disfrutar de una deliciosa comida en un entorno tranquilo y pintoresco. Sin duda, una visita obligada para los amantes de la buena comida y las vistas impresionantes."
+    },
+    {
+        "id": 11,
+        "nombre": "El Sabor de la Monta\u00f1a",
+        "latitud": 6.275012,
+        "longitud": -75.576786,
+        "description": "El Sabor de la Monta\u00f1a es un restaurante acogedor y familiar ubicado en las faldas de la monta\u00f1a, con una vista impresionante que acompa\u00f1a a cada bocado. Su cocina se especializa en platos tradicionales de la regi\u00f3n, con ingredientes frescos y de alta calidad que resaltan los sabores aut\u00e9nticos de la monta\u00f1a.\n\nEl men\u00fa ofrece una variedad de platos t\u00edpicos, desde truchas frescas hasta estofados de cordero, todos preparados con maestr\u00eda y presentados de forma impecable. Los postres caseros son una delicia para el paladar, con opciones como tarta de manzana y helado de frutas de la temporada.\n\nEl servicio es atento y amable, siempre dispuesto a recomendar platos y maridajes que complementen la experiencia gastron\u00f3mica. El ambiente r\u00fastico y c\u00e1lido invita a relajarse y disfrutar de una comida reconfortante en medio de la naturaleza.\n\nEn resumen, El Sabor de la Monta\u00f1a es un lugar perfecto para aquellos que buscan una experiencia culinaria aut\u00e9ntica y memorable en un entorno \u00fanico y encantador."
+    },
+    {
+        "id": 12,
+        "nombre": "Comidas T\u00edpicas El Poblado",
+        "latitud": 6.239112,
+        "longitud": -75.573167,
+        "description": "Comidas T\u00edpicas El Poblado es un restaurante acogedor y familiar que ofrece una amplia variedad de platos t\u00edpicos de la regi\u00f3n. Ubicado en el coraz\u00f3n del Poblado, este restaurante se destaca por su ambiente c\u00e1lido y su excelente servicio.\n\nLa carta de Comidas T\u00edpicas El Poblado incluye platos tradicionales como bandeja paisa, sancocho, arepas de ch\u00f3colo y ajiaco, todos preparados con ingredientes frescos y de alta calidad. Adem\u00e1s, el restaurante ofrece una selecci\u00f3n de postres caseros que no te puedes perder, como la natilla y el arroz con leche.\n\nEl personal de Comidas T\u00edpicas El Poblado es amable y atento, siempre dispuesto a recomendarte los platos m\u00e1s deliciosos de su men\u00fa. El ambiente del restaurante es acogedor y familiar, perfecto para disfrutar de una comida tradicional colombiana en un entorno agradable.\n\nEn resumen, Comidas T\u00edpicas El Poblado es una excelente opci\u00f3n para aquellos que buscan disfrutar de la aut\u00e9ntica gastronom\u00eda colombiana en un ambiente acogedor y familiar. \u00a1No te arrepentir\u00e1s de visitar este encantador restaurante!"
+    },
+    {
+        "id": 13,
+        "nombre": "Los Sabores del Sur",
+        "latitud": 6.255967,
+        "longitud": -75.576,
+        "description": "Los Sabores del Sur es un restaurante que ofrece una experiencia culinaria aut\u00e9ntica y deliciosa de la cocina tradicional del sur de Espa\u00f1a. Ubicado en el coraz\u00f3n de la ciudad, este acogedor establecimiento se destaca por su ambiente c\u00e1lido y acogedor, perfecto para disfrutar de una comida en compa\u00f1\u00eda de amigos o familiares.\n\nLa carta de Los Sabores del Sur destaca por sus platos elaborados con ingredientes frescos y de alta calidad, que resaltan los sabores y aromas caracter\u00edsticos de la regi\u00f3n. Desde las cl\u00e1sicas tapas como el jam\u00f3n ib\u00e9rico y las croquetas de bacalao, hasta platos principales como el rabo de toro y el salmorejo, cada bocado es una explosi\u00f3n de sabor que transporta a los comensales a Andaluc\u00eda.\n\nEl servicio es atento y amable, y el ambiente es animado y acogedor. Los precios son razonables y la relaci\u00f3n calidad-precio es excelente. En resumen, Los Sabores del Sur es una excelente opci\u00f3n para aquellos que buscan disfrutar de la aut\u00e9ntica gastronom\u00eda del sur de Espa\u00f1a en un ambiente agradable y acogedor."
+    },
+    {
+        "id": 14,
+        "nombre": "Parrilla La Candelaria",
+        "latitud": 6.238245,
+        "longitud": -75.583517,
+        "description": "Parrilla La Candelaria es un acogedor restaurante ubicado en el coraz\u00f3n de la ciudad, conocido por su excelente comida y ambiente familiar. La decoraci\u00f3n r\u00fastica y c\u00e1lida crea un ambiente acogedor y relajado, perfecto para disfrutar de una deliciosa comida.\n\nLa especialidad de la casa son las carnes a la parrilla, que son simplemente deliciosas. La carne se cocina a la perfecci\u00f3n, tierna y jugosa, con un sabor ahumado que la hace irresistible. Adem\u00e1s, cuentan con una amplia variedad de guarniciones y salsas para acompa\u00f1ar, que complementan a la perfecci\u00f3n el sabor de la carne.\n\nEl servicio es impecable, el personal es amable y atento, siempre dispuesto a hacer recomendaciones y asegurarse de que la experiencia del cliente sea inolvidable. Adem\u00e1s, el precio es muy razonable para la calidad de la comida y el servicio que se ofrece.\n\nEn resumen, Parrilla La Candelaria es un lugar perfecto para disfrutar de una excelente comida en un ambiente acogedor y familiar. Sin duda, una visita obligada para los amantes de la buena comida."
+    },
+    {
+        "id": 15,
+        "nombre": "Saz\u00f3n Antioque\u00f1o",
+        "latitud": 6.249036,
+        "longitud": -75.577112,
+        "description": "Saz\u00f3n Antioque\u00f1o es un acogedor restaurante que ofrece aut\u00e9ntica comida antioque\u00f1a en un ambiente familiar y acogedor. Ubicado en el coraz\u00f3n de la ciudad, este lugar se destaca por su excelente servicio y deliciosos platos tradicionales de la regi\u00f3n.\n\nAl entrar, te reciben con la calidez t\u00edpica de la hospitalidad antioque\u00f1a y te hacen sentir como en casa. El men\u00fa ofrece una amplia variedad de platos t\u00edpicos como bandeja paisa, sancocho, arepas de ch\u00f3colo y empanadas, todos preparados con ingredientes frescos y de alta calidad.\n\nLa presentaci\u00f3n de los platos es impecable y la porci\u00f3n es generosa, garantizando una experiencia culinaria satisfactoria. Adem\u00e1s, el restaurante cuenta con una extensa carta de vinos y licores para acompa\u00f1ar la comida.\n\nEn resumen, Saz\u00f3n Antioque\u00f1o es el lugar perfecto para disfrutar de la deliciosa comida antioque\u00f1a en un ambiente acogedor y familiar. Sin duda, una excelente opci\u00f3n para aquellos que buscan una experiencia gastron\u00f3mica aut\u00e9ntica y memorable."
+    },
+    {
+        "id": 16,
+        "nombre": "Los Arrieros",
+        "latitud": 6.262923,
+        "longitud": -75.584564,
+        "description": "Los Arrieros es un restaurante de comida tradicional colombiana ubicado en el coraz\u00f3n de la ciudad. Su ambiente r\u00fastico y acogedor te transporta a las monta\u00f1as de la regi\u00f3n Andina, con decoraci\u00f3n que incluye sombreros vueltiaos y arrieros en sus paredes.\n\nLa carta ofrece una amplia variedad de platos t\u00edpicos como bandeja paisa, ajiaco, sancocho y arepas rellenas, todos preparados con ingredientes frescos y de alta calidad. Los sabores son aut\u00e9nticos y deliciosos, con porciones generosas que te dejar\u00e1n satisfecho.\n\nEl servicio es amable y atento, con meseros que est\u00e1n siempre dispuestos a recomendarte los platos m\u00e1s populares y a asegurarse de que tu experiencia sea inolvidable. Adem\u00e1s, el precio es bastante accesible, lo que lo convierte en una excelente opci\u00f3n para disfrutar de la gastronom\u00eda colombiana sin gastar una fortuna.\n\nEn resumen, Los Arrieros es un restaurante que combina la tradici\u00f3n y la calidad en cada uno de sus platos, ofreciendo una experiencia culinaria \u00fanica que te har\u00e1 sentir como si estuvieras en Colombia. \u00a1Altamente recomendado!"
+    },
+    {
+        "id": 17,
+        "nombre": "Restaurante La Terraza",
+        "latitud": 6.241095,
+        "longitud": -75.583709,
+        "description": "El Restaurante La Terraza es un lugar encantador ubicado en el coraz\u00f3n de la ciudad, con una vista impresionante de la plaza principal. Su ambiente es acogedor y elegante, perfecto para una cena rom\u00e1ntica o una comida con amigos. La decoraci\u00f3n es moderna y minimalista, con toques de estilo mediterr\u00e1neo que le dan un aire fresco y relajado.\n\nLa carta ofrece una amplia variedad de platos, desde entradas ligeras hasta platos principales elaborados con ingredientes frescos y de alta calidad. Destacan especialmente sus pescados y mariscos, preparados con maestr\u00eda y presentados de forma impecable. Tambi\u00e9n cuentan con una excelente selecci\u00f3n de vinos y postres deliciosos para completar la experiencia gastron\u00f3mica.\n\nEl servicio es atento y profesional, siempre dispuesto a satisfacer las necesidades de los comensales y hacer que su visita sea inolvidable. En definitiva, el Restaurante La Terraza es una excelente opci\u00f3n para disfrutar de una comida exquisita en un ambiente inigualable."
+    },
+    {
+        "id": 18,
+        "nombre": "Parrillada del Norte",
+        "latitud": 6.244999,
+        "longitud": -75.58201,
+        "description": "La Parrillada del Norte es un restaurante que ofrece una experiencia culinaria aut\u00e9ntica y deliciosa. Ubicado en el coraz\u00f3n de la ciudad, este lugar es conocido por su excelente selecci\u00f3n de carnes a la parrilla y platos tradicionales de la cocina argentina.\n\nAl entrar, te reciben con un ambiente acogedor y r\u00fastico, con decoraci\u00f3n que evoca la cultura gaucha. El aroma a carne asada a la parrilla te invita a probar sus especialidades, como el asado de tira, chorizo criollo y morcilla.\n\nLa calidad de la carne es excepcional, jugosa y llena de sabor, acompa\u00f1ada de guarniciones como papas fritas, ensalada y chimichurri casero. El servicio es amable y atento, asegur\u00e1ndose de que tu experiencia sea memorable.\n\nAdem\u00e1s de las carnes, la Parrillada del Norte ofrece una variedad de platos de la cocina argentina, como empanadas, milanesas y pastas caseras. Para acompa\u00f1ar tu comida, no puedes dejar de probar sus vinos argentinos de alta calidad.\n\nEn resumen, la Parrillada del Norte es el lugar perfecto para disfrutar de una aut\u00e9ntica experiencia gastron\u00f3mica argentina en un ambiente acogedor y familiar."
+    },
+    {
+        "id": 19,
+        "nombre": "Rancho Medell\u00edn",
+        "latitud": 6.26601,
+        "longitud": -75.568499,
+        "description": "Rancho Medell\u00edn es un restaurante mexicano aut\u00e9ntico ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar te transporta directamente a M\u00e9xico con su ambiente c\u00e1lido y familiar. \n\nLa carta ofrece una amplia variedad de platillos tradicionales mexicanos, desde tacos y enchiladas hasta pozole y mole. Todos los platillos est\u00e1n preparados con ingredientes frescos y de alta calidad, lo que se refleja en su sabor excepcional. \n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los mejores platillos y asegurarse de que tu experiencia sea inolvidable. Adem\u00e1s, el restaurante cuenta con una extensa carta de bebidas, incluyendo deliciosos c\u00f3cteles y cervezas mexicanas.\n\nEn resumen, Rancho Medell\u00edn es el lugar perfecto para disfrutar de aut\u00e9ntica comida mexicana en un ambiente acogedor y familiar. Sin duda, una visita obligada para los amantes de la gastronom\u00eda mexicana."
+    },
+    {
+        "id": 20,
+        "nombre": "Asados Don Juan",
+        "latitud": 6.250099,
+        "longitud": -75.571011,
+        "description": "Asados Don Juan es un restaurante de comida tradicional argentina ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar te transporta directamente a las pampas argentinas. \n\nSu especialidad son los asados a la parrilla, donde la carne se cocina lentamente sobre brasas de le\u00f1a, logrando un sabor \u00fanico y delicioso. Adem\u00e1s, ofrecen una variedad de cortes de carne, desde el cl\u00e1sico asado de tira hasta la jugosa entra\u00f1a, acompa\u00f1ados de deliciosas guarniciones como papas fritas, ensaladas frescas y chimichurri casero.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los mejores platos y maridajes. El ambiente es familiar y acogedor, perfecto para disfrutar de una comida con amigos o en pareja.\n\nEn resumen, Asados Don Juan es el lugar ideal para los amantes de la carne argentina, donde la calidad de los ingredientes y la pasi\u00f3n por la cocina se reflejan en cada bocado. \u00a1Una experiencia gastron\u00f3mica que no te puedes perder!"
+    },
+    {
+        "id": 21,
+        "nombre": "El Mirador del Poblado",
+        "latitud": 6.261122,
+        "longitud": -75.587653,
+        "description": "El Mirador del Poblado es un restaurante ubicado en una zona privilegiada de la ciudad, con una vista panor\u00e1mica impresionante que acompa\u00f1a a una experiencia gastron\u00f3mica \u00fanica. Su decoraci\u00f3n elegante y moderna crea un ambiente acogedor y sofisticado, ideal para una cena rom\u00e1ntica o una celebraci\u00f3n especial.\n\nLa carta ofrece una amplia variedad de platos de la cocina internacional, con un toque mediterr\u00e1neo y fusiones creativas que sorprenden al paladar. Los ingredientes frescos y de alta calidad se combinan de forma magistral para crear platos exquisitos y bien presentados.\n\nEl servicio es impecable, con un personal atento y profesional que se asegura de que cada cliente se sienta como en casa. Adem\u00e1s, la carta de vinos es extensa y bien seleccionada, ofreciendo opciones para todos los gustos y presupuestos.\n\nEn resumen, El Mirador del Poblado es un restaurante que destaca por su excelente comida, su ambiente elegante y su servicio de primera categor\u00eda. Una visita a este lugar es garant\u00eda de una experiencia gastron\u00f3mica inolvidable."
+    },
+    {
+        "id": 22,
+        "nombre": "Mes\u00f3n de la Plaza",
+        "latitud": 6.264678,
+        "longitud": -75.580312,
+        "description": "El Mes\u00f3n de la Plaza es un encantador restaurante ubicado en el coraz\u00f3n de la ciudad, con una decoraci\u00f3n r\u00fastica y acogedora que te transporta a un ambiente tradicional y familiar. Su carta ofrece una amplia variedad de platos t\u00edpicos de la regi\u00f3n, elaborados con ingredientes frescos y de alta calidad.\n\nDestacan sus deliciosas tapas, perfectas para compartir y probar diferentes sabores. Recomiendo especialmente el pulpo a la gallega y las croquetas caseras, que son simplemente exquisitas. Adem\u00e1s, su carta de vinos es extensa y cuenta con excelentes opciones para maridar con los platos.\n\nEl servicio es atento y amable, siempre dispuesto a recomendarte los platos m\u00e1s destacados y a hacer que tu experiencia sea inolvidable. El ambiente es c\u00e1lido y acogedor, ideal para disfrutar de una comida tranquila y agradable en compa\u00f1\u00eda de amigos o familiares.\n\nEn resumen, el Mes\u00f3n de la Plaza es un restaurante que destaca por su excelente comida, su ambiente acogedor y su servicio impecable. Sin duda, una visita obligada para los amantes de la buena gastronom\u00eda."
+    },
+    {
+        "id": 23,
+        "nombre": "Fonda Las Palmas",
+        "latitud": 6.259987,
+        "longitud": -75.575948,
+        "description": "Fonda Las Palmas es un acogedor restaurante mexicano ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n tradicional y ambiente familiar, este lugar ofrece una experiencia culinaria aut\u00e9ntica y deliciosa.\n\nLa carta de Fonda Las Palmas destaca por sus platillos t\u00edpicos mexicanos, como los tacos al pastor, enchiladas verdes, mole poblano y pozole. Cada platillo est\u00e1 preparado con ingredientes frescos y de alta calidad, lo que se refleja en su sabor y presentaci\u00f3n.\n\nAdem\u00e1s de la comida, el servicio en Fonda Las Palmas es excepcional, con un personal amable y atento que se asegura de que cada cliente se sienta bienvenido y satisfecho.\n\nEn resumen, Fonda Las Palmas es el lugar perfecto para disfrutar de aut\u00e9ntica comida mexicana en un ambiente acogedor y familiar. Sin duda, una excelente opci\u00f3n para aquellos que buscan una experiencia gastron\u00f3mica tradicional y deliciosa."
+    },
+    {
+        "id": 24,
+        "nombre": "Restaurante La Choza",
+        "latitud": 6.24352,
+        "longitud": -75.574678,
+        "description": "El Restaurante La Choza es un acogedor establecimiento ubicado en el coraz\u00f3n de la ciudad, que se destaca por ofrecer una deliciosa cocina tradicional mexicana con un toque moderno. El ambiente r\u00fastico y acogedor del lugar invita a los comensales a disfrutar de una experiencia culinaria \u00fanica.\n\nLa carta del restaurante La Choza ofrece una amplia variedad de platillos t\u00edpicos mexicanos, desde tacos y enchiladas hasta mole y pozole, todos preparados con ingredientes frescos y de alta calidad. Los sabores aut\u00e9nticos y las presentaciones cuidadas hacen que cada bocado sea una verdadera delicia para el paladar.\n\nAdem\u00e1s, el servicio atento y amable de su personal hace que la experiencia en el Restaurante La Choza sea a\u00fan m\u00e1s placentera. Ya sea para una comida de negocios, una cena rom\u00e1ntica o simplemente para disfrutar de una buena comida en compa\u00f1\u00eda de amigos, este restaurante es una excelente opci\u00f3n.\n\nEn resumen, el Restaurante La Choza es un lugar ideal para disfrutar de la aut\u00e9ntica gastronom\u00eda mexicana en un ambiente c\u00e1lido y acogedor. \u00a1Altamente recomendado!"
+    },
+    {
+        "id": 25,
+        "nombre": "Antioque\u00f1ito Gourmet",
+        "latitud": 6.258344,
+        "longitud": -75.563123,
+        "description": "El restaurante Antioque\u00f1ito Gourmet es un lugar acogedor y familiar que ofrece una experiencia culinaria aut\u00e9ntica de la regi\u00f3n de Antioquia en Colombia. Con una decoraci\u00f3n r\u00fastica y tradicional, este restaurante se destaca por su ambiente c\u00e1lido y acogedor que te transporta directamente a las monta\u00f1as de Colombia.\n\nLa carta del Antioque\u00f1ito Gourmet est\u00e1 repleta de platos t\u00edpicos antioque\u00f1os, como la bandeja paisa, el ajiaco, la arepa de choclo y la lechona, todos preparados con ingredientes frescos y de alta calidad. Los sabores son aut\u00e9nticos y deliciosos, y cada bocado te hace sentir como si estuvieras en casa.\n\nEl servicio es amable y atento, y el personal est\u00e1 siempre dispuesto a recomendarte los platos m\u00e1s representativos de la regi\u00f3n. Adem\u00e1s, el restaurante cuenta con una amplia selecci\u00f3n de vinos y licores colombianos para acompa\u00f1ar tu comida.\n\nEn resumen, el Antioque\u00f1ito Gourmet es el lugar perfecto para disfrutar de la deliciosa comida antioque\u00f1a en un ambiente acogedor y familiar. \u00a1Una experiencia gastron\u00f3mica que no te puedes perder!"
+    },
+    {
+        "id": 26,
+        "nombre": "La Parrilla del Oriente",
+        "latitud": 6.270045,
+        "longitud": -75.578924,
+        "description": "La Parrilla del Oriente es un acogedor restaurante ubicado en el coraz\u00f3n de la ciudad, especializado en cocina tradicional oriental. Su ambiente es c\u00e1lido y acogedor, con una decoraci\u00f3n sencilla pero elegante que invita a disfrutar de una experiencia culinaria \u00fanica.\n\nLa carta ofrece una amplia variedad de platos t\u00edpicos de la regi\u00f3n, destacando sus exquisitas parrilladas de carne y marisco, as\u00ed como sus deliciosos platos de arroz y noodles. Los ingredientes son frescos y de alta calidad, lo que se refleja en el sabor y la presentaci\u00f3n de cada plato.\n\nEl servicio es atento y amable, siempre dispuesto a recomendar los platos m\u00e1s populares y a satisfacer las necesidades de los comensales. Adem\u00e1s, el restaurante cuenta con una extensa carta de vinos y c\u00f3cteles para acompa\u00f1ar la comida.\n\nEn resumen, La Parrilla del Oriente es una excelente opci\u00f3n para aquellos que buscan disfrutar de aut\u00e9ntica cocina oriental en un ambiente agradable y acogedor. Sin duda, una experiencia gastron\u00f3mica que no decepcionar\u00e1."
+    },
+    {
+        "id": 27,
+        "nombre": "Cocina Campesina",
+        "latitud": 6.250892,
+        "longitud": -75.567236,
+        "description": "Cocina Campesina es un acogedor restaurante que ofrece una experiencia culinaria aut\u00e9ntica y reconfortante. Ubicado en el coraz\u00f3n del campo, este lugar se destaca por su ambiente r\u00fastico y su cocina casera tradicional.\n\nLos platos que se sirven en Cocina Campesina son una deliciosa combinaci\u00f3n de sabores y texturas, preparados con ingredientes frescos y de alta calidad. Desde las sopas y guisos hasta las carnes a la parrilla y los postres caseros, cada bocado es una explosi\u00f3n de sabor que te transporta a la cocina de la abuela.\n\nEl servicio en Cocina Campesina es amable y atento, haciendo que te sientas como en casa desde el momento en que entras por la puerta. Adem\u00e1s, el ambiente acogedor y familiar del restaurante lo convierte en el lugar perfecto para disfrutar de una comida tranquila y reconfortante.\n\nEn resumen, Cocina Campesina es un tesoro culinario escondido en medio del campo, donde la comida casera y el ambiente acogedor se combinan para ofrecer una experiencia gastron\u00f3mica inolvidable."
+    },
+    {
+        "id": 28,
+        "nombre": "Sabores del Campo",
+        "latitud": 6.247865,
+        "longitud": -75.576348,
+        "description": "Sabores del Campo es un restaurante acogedor y familiar ubicado en el coraz\u00f3n de la ciudad. Su decoraci\u00f3n r\u00fastica y c\u00e1lida crea un ambiente acogedor y relajante para disfrutar de una deliciosa comida casera.\n\nLa carta ofrece una amplia variedad de platos tradicionales de la cocina colombiana, todos preparados con ingredientes frescos y de alta calidad. Desde las arepas rellenas hasta los sancochos y bandejas paisas, cada plato en Sabores del Campo es una explosi\u00f3n de sabores aut\u00e9nticos que te transportar\u00e1n directamente al campo colombiano.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los platos m\u00e1s populares o a adaptar cualquier plato a tus preferencias diet\u00e9ticas. Adem\u00e1s, el precio es muy asequible, lo que lo convierte en una excelente opci\u00f3n para disfrutar de una comida deliciosa sin gastar una fortuna.\n\nEn resumen, Sabores del Campo es el lugar perfecto para disfrutar de la aut\u00e9ntica comida colombiana en un ambiente acogedor y familiar. \u00a1No te lo puedes perder!"
+    },
+    {
+        "id": 29,
+        "nombre": "El Rinc\u00f3n de Antioquia",
+        "latitud": 6.243399,
+        "longitud": -75.572321,
+        "description": "El Rinc\u00f3n de Antioquia es un acogedor restaurante que ofrece aut\u00e9ntica comida colombiana en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y ambiente familiar, este lugar te transporta directamente a las calles de Medell\u00edn.\n\nSu men\u00fa cuenta con una amplia variedad de platos t\u00edpicos antioque\u00f1os, como la bandeja paisa, la arepa de ch\u00f3colo, el ajiaco y la lechona, todos preparados con ingredientes frescos y sabores tradicionales que te har\u00e1n sentir como en casa.\n\nAdem\u00e1s, El Rinc\u00f3n de Antioquia destaca por su excelente servicio y atenci\u00f3n al cliente, siempre dispuestos a recomendarte los platos m\u00e1s representativos de la regi\u00f3n y a hacer de tu experiencia gastron\u00f3mica algo inolvidable.\n\nEn resumen, si buscas disfrutar de la verdadera comida colombiana en un ambiente acogedor y familiar, El Rinc\u00f3n de Antioquia es sin duda el lugar perfecto para satisfacer tus antojos y deleitar tu paladar con sabores aut\u00e9nticos y deliciosos."
+    },
+    {
+        "id": 30,
+        "nombre": "La Cocina de la Abuela",
+        "latitud": 6.254673,
+        "longitud": -75.565554,
+        "description": "La Cocina de la Abuela es un acogedor restaurante que te transporta a la cocina de una abuela tradicional, con platos caseros y sabrosos que te hacen sentir como en casa. El ambiente es c\u00e1lido y familiar, con una decoraci\u00f3n r\u00fastica que te invita a relajarte y disfrutar de una buena comida.\n\nLa carta ofrece una amplia variedad de platos t\u00edpicos de la cocina espa\u00f1ola, con especialidades como el cocido madrile\u00f1o, las croquetas caseras y el arroz con bogavante. Los ingredientes son frescos y de alta calidad, lo que se refleja en el sabor de cada plato.\n\nEl servicio es atento y amable, haciendo que la experiencia sea a\u00fan m\u00e1s agradable. Adem\u00e1s, el precio es bastante asequible para la calidad de la comida y el ambiente del restaurante.\n\nEn resumen, La Cocina de la Abuela es el lugar perfecto para disfrutar de una comida reconfortante y deliciosa, con el encanto de la cocina casera y el cari\u00f1o de una abuela. \u00a1Altamente recomendado!"
+    },
+    {
+        "id": 31,
+        "nombre": "Asados El Llanero",
+        "latitud": 6.24945,
+        "longitud": -75.576293,
+        "description": "Asados El Llanero es un restaurante de comida t\u00edpica colombiana ubicado en el coraz\u00f3n de Bogot\u00e1. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar ofrece una experiencia gastron\u00f3mica aut\u00e9ntica y deliciosa.\n\nSu especialidad son los asados a la parrilla, donde la carne se cocina a la perfecci\u00f3n y se sirve jugosa y llena de sabor. Adem\u00e1s, cuentan con una amplia variedad de platos tradicionales como bandeja paisa, sancocho, arepas y empanadas, todos preparados con ingredientes frescos y de alta calidad.\n\nEl servicio es amable y atento, siempre dispuesto a recomendar los mejores platos y a asegurarse de que los clientes tengan una experiencia memorable. El ambiente es animado y familiar, perfecto para disfrutar de una comida con amigos o en familia.\n\nEn resumen, Asados El Llanero es un restaurante que destaca por su deliciosa comida colombiana, su ambiente acogedor y su excelente servicio. Sin duda, es una parada obligatoria para los amantes de la buena comida tradicional."
+    },
+    {
+        "id": 32,
+        "nombre": "Sabores de La Sierra",
+        "latitud": 6.253209,
+        "longitud": -75.57819,
+        "description": "Sabores de La Sierra es un restaurante acogedor y familiar ubicado en el coraz\u00f3n de la sierra, que ofrece una experiencia culinaria \u00fanica y aut\u00e9ntica. Con una decoraci\u00f3n r\u00fastica y c\u00e1lida, este restaurante se destaca por su excelente servicio y la calidad de sus platos.\n\nLa carta de Sabores de La Sierra destaca por su variedad de platos tradicionales de la regi\u00f3n, elaborados con ingredientes frescos y de alta calidad. Desde sus deliciosas carnes a la parrilla hasta sus exquisitos guisos y postres caseros, cada bocado en este restaurante es una explosi\u00f3n de sabores y aromas que te transportan a la sierra.\n\nAdem\u00e1s, Sabores de La Sierra cuenta con una amplia selecci\u00f3n de vinos y licores para maridar tus comidas, as\u00ed como un ambiente acogedor y familiar que te har\u00e1 sentir como en casa. Sin duda, este restaurante es una parada obligatoria para los amantes de la buena comida y la gastronom\u00eda tradicional de la sierra."
+    },
+    {
+        "id": 33,
+        "nombre": "Saz\u00f3n Paisa",
+        "latitud": 6.248211,
+        "longitud": -75.580045,
+        "description": "Saz\u00f3n Paisa es un restaurante colombiano ubicado en el coraz\u00f3n de la ciudad. Su ambiente acogedor y familiar te transporta directamente a las calles de Medell\u00edn. La decoraci\u00f3n colorida y los aromas de la cocina tradicional colombiana te hacen sentir como si estuvieras en casa.\n\nLa carta ofrece una amplia variedad de platos t\u00edpicos, desde bandeja paisa hasta arepas rellenas y sancocho. Cada plato est\u00e1 preparado con ingredientes frescos y aut\u00e9nticos, respetando las recetas tradicionales de la regi\u00f3n.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los platos m\u00e1s populares o a adaptarlos a tus preferencias. Adem\u00e1s, el precio es muy accesible, lo que lo convierte en una excelente opci\u00f3n para disfrutar de la comida colombiana sin gastar demasiado.\n\nEn resumen, Saz\u00f3n Paisa es el lugar perfecto para probar la verdadera gastronom\u00eda colombiana en un ambiente c\u00e1lido y acogedor. \u00a1No te arrepentir\u00e1s de visitarlo!"
+    },
+    {
+        "id": 34,
+        "nombre": "La Fonda del Norte",
+        "latitud": 6.245788,
+        "longitud": -75.563456,
+        "description": "La Fonda del Norte es un restaurante mexicano tradicional ubicado en el coraz\u00f3n de la Ciudad de M\u00e9xico. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar te transporta a la aut\u00e9ntica cocina mexicana con cada bocado.\n\nSu men\u00fa ofrece una amplia variedad de platillos t\u00edpicos, desde tacos y enchiladas hasta pozole y mole. Todos los ingredientes son frescos y de alta calidad, lo que se refleja en el sabor de cada platillo.\n\nEl servicio es impecable, con meseros atentos y amables que te hacen sentir como en casa. Adem\u00e1s, la carta de vinos y c\u00f3cteles es extensa, perfecta para maridar con la comida mexicana.\n\nLa Fonda del Norte es el lugar ideal para disfrutar de una comida tradicional mexicana en un ambiente c\u00e1lido y acogedor. Sin duda, una experiencia gastron\u00f3mica que no te puedes perder en la Ciudad de M\u00e9xico."
+    },
+    {
+        "id": 35,
+        "nombre": "Parrilladas Los Arrieros",
+        "latitud": 6.27029,
+        "longitud": -75.58245,
+        "description": "Parrilladas Los Arrieros es un restaurante de comida tradicional argentina ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar te transporta a las pampas argentinas desde el momento en que entras por la puerta.\n\nSu especialidad son las parrilladas, con una amplia variedad de cortes de carne de primera calidad, perfectamente cocinados a la parrilla y acompa\u00f1ados de deliciosas guarniciones. Adem\u00e1s, ofrecen una selecci\u00f3n de vinos argentinos que complementan a la perfecci\u00f3n cada plato.\n\nEl servicio es impecable, con un personal atento y amable que se asegura de que tu experiencia sea inolvidable. El ambiente es animado y familiar, ideal para disfrutar de una comida con amigos o en pareja.\n\nEn resumen, Parrilladas Los Arrieros es el lugar perfecto para los amantes de la carne y la gastronom\u00eda argentina, donde la calidad de los ingredientes y la pasi\u00f3n por la cocina se reflejan en cada bocado. \u00a1No te lo puedes perder!"
+    },
+    {
+        "id": 36,
+        "nombre": "El Saz\u00f3n Tradicional",
+        "latitud": 6.240987,
+        "longitud": -75.577543,
+        "description": "El Saz\u00f3n Tradicional es un acogedor restaurante que ofrece aut\u00e9ntica comida mexicana en un ambiente familiar y acogedor. Ubicado en el coraz\u00f3n de la ciudad, este lugar se destaca por su excelente servicio y deliciosos platillos tradicionales.\n\nAl entrar, te reciben con la calidez de un hogar mexicano, con decoraci\u00f3n colorida y detalles t\u00edpicos que te transportan directamente a M\u00e9xico. El men\u00fa ofrece una amplia variedad de opciones, desde tacos y enchiladas hasta pozole y mole, todos preparados con ingredientes frescos y sabrosos.\n\nDestacan especialmente sus salsas caseras, que le dan un toque \u00fanico a cada platillo. Adem\u00e1s, cuentan con una extensa carta de bebidas, incluyendo margaritas y cervezas mexicanas para acompa\u00f1ar tu comida.\n\nEn resumen, El Saz\u00f3n Tradicional es el lugar perfecto para disfrutar de una aut\u00e9ntica experiencia culinaria mexicana, con sabores tradicionales que te har\u00e1n sentir como en casa. \u00a1No te lo puedes perder!"
+    },
+    {
+        "id": 37,
+        "nombre": "El Fog\u00f3n Paisa",
+        "latitud": 6.245112,
+        "longitud": -75.581789,
+        "description": "El Fog\u00f3n Paisa es un restaurante colombiano ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar te transporta directamente a las calles de Medell\u00edn. \n\nLa carta ofrece una amplia variedad de platos t\u00edpicos de la gastronom\u00eda colombiana, destacando sus deliciosas bandejas paisas, arepas rellenas, empanadas y sancocho. Los sabores aut\u00e9nticos y la presentaci\u00f3n cuidada hacen que cada bocado sea una experiencia \u00fanica.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los platos m\u00e1s populares o a adaptarse a tus preferencias. Adem\u00e1s, el ambiente familiar y acogedor hace que te sientas como en casa desde el primer momento.\n\nEn resumen, El Fog\u00f3n Paisa es el lugar perfecto para disfrutar de una aut\u00e9ntica experiencia culinaria colombiana en un ambiente c\u00e1lido y acogedor. Sin duda, un restaurante que no puedes dejar de visitar si eres amante de la buena comida y la hospitalidad."
+    },
+    {
+        "id": 38,
+        "nombre": "Delicias de la Monta\u00f1a",
+        "latitud": 6.252667,
+        "longitud": -75.57129,
+        "description": "Delicias de la Monta\u00f1a es un restaurante acogedor y familiar ubicado en el coraz\u00f3n de la monta\u00f1a. Su ambiente r\u00fastico y c\u00e1lido invita a los comensales a disfrutar de una experiencia culinaria \u00fanica. La decoraci\u00f3n del lugar es sencilla pero elegante, con detalles que hacen referencia a la naturaleza y a la vida en la monta\u00f1a.\n\nLa carta de Delicias de la Monta\u00f1a destaca por su variedad de platos tradicionales de la regi\u00f3n, elaborados con ingredientes frescos y de alta calidad. Desde las carnes a la parrilla hasta los guisos caseros, cada bocado es una explosi\u00f3n de sabores que deleitar\u00e1 a los paladares m\u00e1s exigentes.\n\nEl servicio en este restaurante es impecable, con un personal atento y amable que se esfuerza por hacer que cada visita sea inolvidable. Adem\u00e1s, la relaci\u00f3n calidad-precio es excelente, lo que lo convierte en una opci\u00f3n ideal para disfrutar de una comida deliciosa sin gastar una fortuna.\n\nEn resumen, Delicias de la Monta\u00f1a es un lugar perfecto para aquellos que buscan una experiencia gastron\u00f3mica aut\u00e9ntica y reconfortante en un entorno encantador."
+    },
+    {
+        "id": 39,
+        "nombre": "Asados La Gloria",
+        "latitud": 6.267098,
+        "longitud": -75.576423,
+        "description": "Asados La Gloria es un restaurante de comida tradicional argentina ubicado en el coraz\u00f3n de la ciudad. Su ambiente r\u00fastico y acogedor te transporta a las parrillas de Buenos Aires, con su decoraci\u00f3n de madera y ladrillo a la vista. \n\nLa estrella del men\u00fa son, sin duda, sus deliciosos cortes de carne a la parrilla, jugosos y llenos de sabor. Desde el cl\u00e1sico asado argentino hasta las entra\u00f1as y mollejas, cada plato est\u00e1 cuidadosamente preparado y cocinado a la perfecci\u00f3n. \n\nAdem\u00e1s de la carne, Asados La Gloria ofrece una variedad de acompa\u00f1amientos tradicionales como chimichurri, ensaladas frescas y papas fritas caseras. Para los amantes del vino, cuentan con una excelente selecci\u00f3n de vinos argentinos que complementan a la perfecci\u00f3n cada plato.\n\nEl servicio es amable y atento, asegur\u00e1ndose de que cada cliente tenga una experiencia gastron\u00f3mica memorable. En resumen, Asados La Gloria es el lugar ideal para disfrutar de aut\u00e9ntica comida argentina en un ambiente c\u00e1lido y acogedor."
+    },
+    {
+        "id": 40,
+        "nombre": "Restaurante Do\u00f1a Clara",
+        "latitud": 6.261768,
+        "longitud": -75.577899,
+        "description": "El Restaurante Do\u00f1a Clara es un acogedor y tradicional establecimiento ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y c\u00e1lida, este restaurante ofrece una experiencia culinaria \u00fanica que combina la cocina tradicional con toques modernos.\n\nLa carta de Do\u00f1a Clara destaca por sus platos caseros y sabrosos, elaborados con ingredientes frescos y de alta calidad. Entre sus especialidades se encuentran el pollo a la brasa, las carnes a la parrilla y los guisos tradicionales, todos preparados con esmero y presentados de forma impecable.\n\nEl servicio en el Restaurante Do\u00f1a Clara es atento y amable, creando un ambiente acogedor y familiar que invita a disfrutar de una agradable velada. Adem\u00e1s, la relaci\u00f3n calidad-precio es excelente, lo que lo convierte en una opci\u00f3n ideal para aquellos que buscan una experiencia gastron\u00f3mica aut\u00e9ntica y satisfactoria.\n\nEn resumen, el Restaurante Do\u00f1a Clara es un lugar perfecto para disfrutar de deliciosos platos caseros en un ambiente acogedor y familiar. Sin duda, una visita obligada para los amantes de la buena comida."
+    },
+    {
+        "id": 41,
+        "nombre": "Parrilladas Medell\u00edn",
+        "latitud": 6.247112,
+        "longitud": -75.583445,
+        "description": "Parrilladas Medell\u00edn es un restaurante de comida colombiana ubicado en el coraz\u00f3n de la ciudad. Con una decoraci\u00f3n r\u00fastica y acogedora, este lugar ofrece una experiencia gastron\u00f3mica \u00fanica para los amantes de la carne a la parrilla.\n\nSu men\u00fa se destaca por una amplia variedad de cortes de carne, desde jugosos filetes de res hasta tiernas costillas de cerdo, todos preparados con t\u00e9cnicas tradicionales que resaltan el sabor y la calidad de los ingredientes. Adem\u00e1s, cuentan con deliciosos acompa\u00f1amientos como arepas, patacones y ensaladas frescas que complementan perfectamente cada plato.\n\nEl servicio es amable y atento, garantizando una experiencia agradable para todos los comensales. Adem\u00e1s, el ambiente es ideal para disfrutar de una comida en familia o con amigos, ya que el restaurante cuenta con amplios espacios y una terraza al aire libre.\n\nEn resumen, Parrilladas Medell\u00edn es el lugar perfecto para disfrutar de aut\u00e9nticas parrilladas colombianas en un ambiente acogedor y familiar. \u00a1Una experiencia culinaria que no te puedes perder!"
+    },
+    {
+        "id": 42,
+        "nombre": "Fonda La Herradura",
+        "latitud": 6.255567,
+        "longitud": -75.56789,
+        "description": "La Fonda La Herradura es un acogedor restaurante ubicado en el coraz\u00f3n de la ciudad, conocido por su aut\u00e9ntica cocina mexicana y su ambiente familiar. Al entrar, te reciben con la calidez de su decoraci\u00f3n r\u00fastica y el aroma tentador de sus platillos tradicionales.\n\nLa carta ofrece una amplia variedad de opciones, desde tacos y enchiladas hasta pozole y mole, todos preparados con ingredientes frescos y sabrosos. Destacan sus platillos estrella como los chiles en nogada y los tamales, que son verdaderas delicias para el paladar.\n\nEl servicio es amable y atento, siempre dispuesto a recomendarte los mejores platillos y a asegurarse de que tu experiencia sea inolvidable. Adem\u00e1s, el ambiente es perfecto para disfrutar de una comida en familia o con amigos, ya que el restaurante cuenta con mesas amplias y una terraza al aire libre.\n\nEn resumen, la Fonda La Herradura es el lugar ideal para disfrutar de la aut\u00e9ntica comida mexicana en un ambiente acogedor y familiar. \u00a1No te arrepentir\u00e1s de visitarlo!"
+    },
+    {
+        "id": 43,
+        "nombre": "Sabores del Norte",
+        "latitud": 6.240999,
+        "longitud": -75.570675,
+        "description": "Sabores del Norte es un acogedor restaurante que ofrece una deliciosa experiencia culinaria inspirada en la gastronom\u00eda del norte de Espa\u00f1a. Ubicado en el coraz\u00f3n de la ciudad, este establecimiento destaca por su ambiente acogedor y su atenci\u00f3n personalizada.\n\nLa carta de Sabores del Norte destaca por sus platos tradicionales y aut\u00e9nticos, elaborados con ingredientes frescos y de alta calidad. Entre sus especialidades se encuentran las tapas de pulpo a la gallega, las croquetas de bacalao y los pintxos vascos. Adem\u00e1s, su amplia selecci\u00f3n de vinos de la regi\u00f3n complementa a la perfecci\u00f3n cada plato.\n\nEl servicio es impecable, con un personal atento y amable que se asegura de que cada cliente disfrute de una experiencia gastron\u00f3mica inolvidable. El ambiente es c\u00e1lido y acogedor, perfecto para disfrutar de una comida en pareja o en grupo.\n\nEn resumen, Sabores del Norte es un restaurante que combina la tradici\u00f3n culinaria del norte de Espa\u00f1a con un servicio excepcional, creando una experiencia gastron\u00f3mica \u00fanica que no te puedes perder."
+    },
+    {
+        "id": 44,
+        "nombre": "El Buen Paladar",
+        "latitud": 6.268532,
+        "longitud": -75.577312,
+        "description": "El Buen Paladar es un acogedor restaurante que ofrece una experiencia culinaria aut\u00e9ntica y deliciosa. Ubicado en el coraz\u00f3n de la ciudad, este lugar se destaca por su ambiente acogedor y su excelente servicio. \n\nLa carta del restaurante El Buen Paladar es variada y ofrece una amplia selecci\u00f3n de platos tradicionales de la cocina mexicana, con un toque moderno y creativo. Los ingredientes frescos y de alta calidad se combinan de forma magistral para crear platos sabrosos y bien presentados.\n\nEntre los platos m\u00e1s destacados se encuentran los tacos al pastor, las enchiladas suizas y los chiles en nogada. Adem\u00e1s, el restaurante cuenta con una excelente selecci\u00f3n de bebidas, incluyendo margaritas y cervezas artesanales.\n\nEl ambiente acogedor y la atenci\u00f3n personalizada hacen de El Buen Paladar un lugar ideal para disfrutar de una comida en familia o con amigos. Sin duda, una visita a este restaurante es garant\u00eda de una experiencia gastron\u00f3mica inolvidable."
+    },
+    {
+        "id": 45,
+        "nombre": "La Fonda Campestre",
+        "latitud": 6.25877,
+        "longitud": -75.578445,
+        "description": "La Fonda Campestre es un encantador restaurante ubicado en medio de la naturaleza, con un ambiente r\u00fastico y acogedor que te transporta a un aut\u00e9ntico hogar campestre. Su cocina se destaca por ofrecer platos tradicionales de la regi\u00f3n, preparados con ingredientes frescos y de alta calidad.\n\nEl men\u00fa de La Fonda Campestre es variado y delicioso, con opciones que van desde carnes a la parrilla hasta platos vegetarianos, todos ellos con un toque casero y sabroso que los hace irresistibles. Adem\u00e1s, cuentan con una excelente selecci\u00f3n de vinos y postres que complementan a la perfecci\u00f3n cualquier comida.\n\nEl servicio en este restaurante es impecable, con un personal atento y amable que se asegura de que tu experiencia sea inolvidable. La decoraci\u00f3n del lugar es sencilla pero elegante, con detalles que reflejan la calidez y la hospitalidad del campo.\n\nEn resumen, La Fonda Campestre es el lugar ideal para disfrutar de una deliciosa comida en un entorno tranquilo y relajado, donde la buena comida y el buen servicio se combinan para ofrecerte una experiencia gastron\u00f3mica \u00fanica."
+    },
+    {
+        "id": 46,
+        "nombre": "El Parrillero del Sur",
+        "latitud": 6.252145,
+        "longitud": -75.569432,
+        "description": "El Parrillero del Sur es un acogedor restaurante argentino ubicado en el coraz\u00f3n de la ciudad. Su ambiente r\u00fastico y c\u00e1lido te transporta directamente a las pampas argentinas, con su decoraci\u00f3n de madera y detalles tradicionales.\n\nLa estrella de la casa son, sin duda, sus deliciosas carnes a la parrilla, jugosas y llenas de sabor. Desde tiernos cortes de carne de res hasta suculentas costillas de cerdo, cada plato es una explosi\u00f3n de sabores que deleitar\u00e1 a los amantes de la carne.\n\nAdem\u00e1s de sus exquisitas parrilladas, El Parrillero del Sur ofrece una amplia variedad de entradas y acompa\u00f1amientos, como empanadas, ensaladas frescas y papas fritas caseras. Para acompa\u00f1ar tu comida, no puedes dejar de probar alguno de sus vinos argentinos, cuidadosamente seleccionados para realzar los sabores de la comida.\n\nEl servicio es amable y atento, y el ambiente es perfecto para disfrutar de una comida en familia o con amigos. En definitiva, El Parrillero del Sur es una excelente opci\u00f3n para los amantes de la carne y la comida argentina en general."
+    },
+    {
+        "id": 47,
+        "nombre": "El Fog\u00f3n de la Abuela",
+        "latitud": 6.240045,
+        "longitud": -75.582345,
+        "description": "El Fog\u00f3n de la Abuela es un acogedor restaurante que te transporta a la cocina de una abuela tradicional, con platos caseros y sabrosos que te hacen sentir como en casa. La decoraci\u00f3n r\u00fastica y c\u00e1lida crea un ambiente acogedor y familiar, perfecto para disfrutar de una comida reconfortante.\n\nLa carta ofrece una amplia variedad de platos t\u00edpicos de la cocina espa\u00f1ola, con especialidades como el cocido madrile\u00f1o, las croquetas caseras y el rabo de toro. Los ingredientes son frescos y de alta calidad, lo que se refleja en el sabor de cada plato.\n\nEl servicio es atento y amable, siempre dispuesto a recomendarte los platos m\u00e1s destacados y a asegurarse de que tu experiencia sea inolvidable. Adem\u00e1s, el precio es muy razonable para la calidad de la comida y el ambiente del restaurante.\n\nEn resumen, El Fog\u00f3n de la Abuela es el lugar perfecto para disfrutar de una comida tradicional y deliciosa en un ambiente acogedor y familiar. Sin duda, una visita obligada para los amantes de la buena gastronom\u00eda."
+    },
+    {
+        "id": 48,
+        "nombre": "Fonda El Carriel",
+        "latitud": 6.26687,
+        "longitud": -75.584123,
+        "description": "La Fonda El Carriel es un acogedor restaurante ubicado en el coraz\u00f3n de la ciudad, que ofrece una experiencia culinaria tradicional y aut\u00e9ntica. Con una decoraci\u00f3n r\u00fastica y un ambiente familiar, este lugar es perfecto para disfrutar de platos caseros y sabrosos.\n\nLa carta de la Fonda El Carriel destaca por sus platos t\u00edpicos de la regi\u00f3n, como la sopa de mondongo, el sancocho de gallina y el arroz con pollo. Todos los platos se preparan con ingredientes frescos y de alta calidad, lo que se refleja en su sabor y presentaci\u00f3n.\n\nAdem\u00e1s, el servicio es amable y atento, lo que hace que la experiencia en este restaurante sea a\u00fan m\u00e1s agradable. Sin duda, la Fonda El Carriel es una excelente opci\u00f3n para aquellos que buscan disfrutar de la comida tradicional colombiana en un ambiente acogedor y familiar."
+    },
+    {
+        "id": 49,
+        "nombre": "Sabores y Asados",
+        "latitud": 6.261234,
+        "longitud": -75.579999,
+        "description": "Sabores y Asados es un restaurante acogedor y familiar que ofrece una deliciosa variedad de platos tradicionales argentinos. Ubicado en el coraz\u00f3n de la ciudad, este restaurante se destaca por su excelente servicio y su ambiente c\u00e1lido y acogedor.\n\nLa especialidad de la casa son los asados a la parrilla, que se preparan con carne de la m\u00e1s alta calidad y se sirven con guarniciones frescas y sabrosas. Adem\u00e1s, en la carta tambi\u00e9n se pueden encontrar otras opciones como empanadas, milanesas y pastas caseras, todas preparadas con ingredientes frescos y de primera calidad.\n\nEl ambiente del restaurante es perfecto para disfrutar de una comida en familia o con amigos, ya que cuenta con un amplio comedor y una terraza al aire libre. El personal es amable y atento, siempre dispuesto a recomendar platos y a asegurarse de que la experiencia culinaria sea inolvidable.\n\nEn resumen, Sabores y Asados es el lugar ideal para disfrutar de aut\u00e9ntica comida argentina en un ambiente acogedor y familiar. Sin duda, una excelente opci\u00f3n para los amantes de la buena gastronom\u00eda."
+    },
+    {
+        "id": 50,
+        "nombre": "Parrilladas del Valle",
+        "latitud": 6.245111,
+        "longitud": -75.566789,
+        "description": "Parrilladas del Valle es un acogedor restaurante ubicado en el coraz\u00f3n de la ciudad, especializado en deliciosas parrilladas argentinas. El ambiente es c\u00e1lido y acogedor, con una decoraci\u00f3n r\u00fastica que te transporta a una aut\u00e9ntica parrilla argentina.\n\nEl men\u00fa ofrece una amplia variedad de cortes de carne, desde tiernos bifes de chorizo hasta jugosas entra\u00f1as, acompa\u00f1adas de deliciosas guarniciones como papas fritas, ensaladas frescas y chimichurri casero. Adem\u00e1s, cuentan con una excelente selecci\u00f3n de vinos argentinos para maridar perfectamente con cada platillo.\n\nEl servicio es impecable, con un personal atento y amable que se asegura de que tu experiencia sea inolvidable. Los precios son razonables y la porci\u00f3n de las parrilladas es generosa, por lo que sin duda quedar\u00e1s satisfecho.\n\nEn resumen, Parrilladas del Valle es el lugar perfecto para disfrutar de una aut\u00e9ntica experiencia gastron\u00f3mica argentina en un ambiente acogedor y familiar. \u00a1No te lo puedes perder!"
+    }
+]

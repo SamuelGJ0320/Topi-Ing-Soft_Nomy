@@ -14,6 +14,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('map/', project_Nomy.map, name='map'),
     path('logout/', project_Nomy.logoutUser, name='logout'),
+    path('restaurant/', include('restaurant.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
