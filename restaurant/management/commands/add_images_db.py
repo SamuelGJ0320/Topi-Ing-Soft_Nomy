@@ -41,8 +41,8 @@ class Command(BaseCommand):
             )
             image_url = response.data[0].url
             img = fetch_image(image_url)
-            img.save(f'media/nomy/images/{restaurant.nombre}.jpg')           
-            restaurant.image = f'media/nomy/images/{restaurant.nombre}.jpg'   
+            img.save(f'nomy/images/{restaurant.nombre}.jpg')           
+            restaurant.image = f'nomy/images/{restaurant.nombre}.jpg'   
             restaurant.save()
             requests_made += 1
         
