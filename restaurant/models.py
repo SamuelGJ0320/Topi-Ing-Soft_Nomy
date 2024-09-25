@@ -8,7 +8,7 @@ def get_default_array():
 
 class Restaurant(models.Model):
     nombre = models.CharField(max_length=250)
-    descripcion = models.CharField(max_length=250)
+    descripcion = models.CharField(max_length=1000)
     latitud = models.CharField(max_length=250)
     longitud = models.CharField(max_length=250)
     image = models.ImageField(upload_to='nomy/images/', default='nomy/images/default.jpeg')
