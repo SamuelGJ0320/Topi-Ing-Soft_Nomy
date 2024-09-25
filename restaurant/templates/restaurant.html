@@ -111,35 +111,43 @@
         </nav>
     </header>
 
+    {% block content %}
     <div class="container">
-        <form action="" method="get" class="mb-4">
-            <div class="input-group">
-                <input type="text" class="form-control" name="searchRestaurant" placeholder="Enter restaurant name or type" value="{{ request.GET.searchRestaurant }}">
-                <button type="submit" class="btn btn-primary">Search</button>
+        <h1>Escribe lo que buscas en un restaurante</h1>
+        <form method="POST" action="{% url 'restaurant' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="prompt">Descripción:</label>
+                <input type="text" id="prompt" name="prompt" class="form-control" required>
             </div>
+            <button type="submit" class="btn btn-primary mt-2">Buscar</button>
         </form>
 
-        <p class="text-muted">Searching for: <strong>{{ request.GET.searchRestaurant }}</strong></p>
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            {% for restaurant in restaurants %}
-            <div class="col">
-                <div class="card h-100">
-                    <img src="{{ restaurant.image.url }}" class="card-img-top" alt="{{ restaurant.nombre }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ restaurant.nombre }}</h5>
-                        <p class="card-text">Latitud: {{ restaurant.latitud }}</p>
-                        <p class="card-text">Longitud: {{ restaurant.longitud }}</p>
-                        <p class="card-text">Descripcion: {{ restaurant.descripcion }}</p>
-                        {% if restaurant.url %}
-                            <a href="{{ restaurant.url }}" class="btn btn-primary">Visit Website</a>
+        {% if recommendations %}
+            <h2 class="mt-4">Recomendaciones:</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for recommendation in recommendations %}
+                <div class="col">
+                    <div class="card">
+                        {% if recommendation.image %}
+                            <img src="{{ recommendation.image.url }}" class="card-img-top" alt="{{ recommendation.nombre }}">
                         {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">{{ recommendation.nombre }}</h5>
+                            <p class="card-text">{{ recommendation.descripcion }}</p>
+                            <p class="card-text"><strong>Latitud:</strong> {{ recommendation.latitud }}</p>
+                            <p class="card-text"><strong>Longitud:</strong> {{ recommendation.longitud }}</p>
+                            <p class="card-text"><strong>Longitud:</strong> {{ recommendation.image }}</p>
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
+        {% else %}
+            <p>No hay películas disponibles.</p>
+        {% endif %}
     </div>
+{% endblock %}
 
     <footer>
         <p>© 2024 Ñomy. Todos los derechos reservados.</p>
