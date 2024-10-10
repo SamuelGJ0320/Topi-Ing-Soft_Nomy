@@ -21,7 +21,7 @@
         header {
             background-color: #f8f9fa;
             padding: 10px;
-            z-index: 1000; /* Asegura que el header esté por encima del mapa */
+            z-index: 1000; 
             position: relative;
         }
 
@@ -32,13 +32,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: calc(100vh - 120px); /* Ajusta la altura del mapa dejando espacio para el header */
+            height: calc(100vh - 120px); 
         }
 
         #mi_mapa {
             flex: 1;
             width: 100%;
-            height: 100%; /* Ajusta la altura del mapa para que ocupe toda la sección */
+            height: 100%; 
         }
 
         #search-bar {
@@ -98,7 +98,7 @@
     <section id="hero">
         <div id="mi_mapa"></div> <!-- Mapa dinámico dentro de la sección -->
         <div id="search-bar">
-            <input type="text" placeholder="What do you want to eat today?" class="search-input">
+            <input type="text" id="search-bar" placeholder="What do you want to eat today?" class="search-input" onkeyup="searchRestaurants()">
         </div>
     </section>
 
@@ -118,79 +118,75 @@
         // Estructura marcador: L.marker([--Coordenadas--]).addTo(map).bindPopup("--Texto--").openPopup();
         //Lista de restaurantes con coordenadas, donde cada restaurante es un diccionario con las claves 'id', 'nombre', 'latitud' y 'longitud'
         var restaurante = [
-            { id: 1, nombre: 'El Poblado Gourmet', latitud: 6.244203, longitud: -75.581212 },
-            { id: 2, nombre: 'Cocina Paisa', latitud: 6.253040, longitud: -75.564573 },
-            { id: 3, nombre: 'La Parrilla del Barrio', latitud: 6.268343, longitud: -75.566273 },
-            { id: 4, nombre: 'Fonda Antioqueña', latitud: 6.256205, longitud: -75.590378 },
-            { id: 5, nombre: 'El Rincón Paisa', latitud: 6.239555, longitud: -75.580307 },
-            { id: 6, nombre: 'Delicias de Medellín', latitud: 6.248340, longitud: -75.558627 },
-            { id: 7, nombre: 'Asados Doña Rosa', latitud: 6.244865, longitud: -75.574241 },
-            { id: 8, nombre: 'La Estancia Campestre', latitud: 6.241251, longitud: -75.582703 },
-            { id: 9, nombre: 'Brasa y Sabor', latitud: 6.230472, longitud: -75.575583 },
-            { id: 10, nombre: 'Cocina de Montaña', latitud: 6.255349, longitud: -75.574356 },
-            { id: 11, nombre: 'El Sabor de la Montaña', latitud: 6.275012, longitud: -75.576786 },
-            { id: 12, nombre: 'Comidas Típicas El Poblado', latitud: 6.239112, longitud: -75.573167 },
-            { id: 13, nombre: 'Los Sabores del Sur', latitud: 6.255967, longitud: -75.576000 },
-            { id: 14, nombre: 'Parrilla La Candelaria', latitud: 6.238245, longitud: -75.583517 },
-            { id: 15, nombre: 'Sazón Antioqueño', latitud: 6.249036, longitud: -75.577112 },
-            { id: 16, nombre: 'Los Arrieros', latitud: 6.262923, longitud: -75.584564 },
-            { id: 17, nombre: 'Restaurante La Terraza', latitud: 6.241095, longitud: -75.583709 },
-            { id: 18, nombre: 'Parrillada del Norte', latitud: 6.244999, longitud: -75.582010 },
-            { id: 19, nombre: 'Rancho Medellín', latitud: 6.266010, longitud: -75.568499 },
-            { id: 20, nombre: 'Asados Don Juan', latitud: 6.250099, longitud: -75.571011 },
-            { id: 21, nombre: 'El Mirador del Poblado', latitud: 6.261122, longitud: -75.587653 },
-            { id: 22, nombre: 'Mesón de la Plaza', latitud: 6.264678, longitud: -75.580312 },
-            { id: 23, nombre: 'Fonda Las Palmas', latitud: 6.259987, longitud: -75.575948 },
-            { id: 24, nombre: 'Restaurante La Choza', latitud: 6.243520, longitud: -75.574678 },
-            { id: 25, nombre: 'Antioqueñito Gourmet', latitud: 6.258344, longitud: -75.563123 },
-            { id: 26, nombre: 'La Parrilla del Oriente', latitud: 6.270045, longitud: -75.578924 },
-            { id: 27, nombre: 'Cocina Campesina', latitud: 6.250892, longitud: -75.567236 },
-            { id: 28, nombre: 'Sabores del Campo', latitud: 6.247865, longitud: -75.576348 },
-            { id: 29, nombre: 'El Rincón de Antioquia', latitud: 6.243399, longitud: -75.572321 },
-            { id: 30, nombre: 'La Cocina de la Abuela', latitud: 6.254673, longitud: -75.565554 },
-            { id: 31, nombre: 'Asados El Llanero', latitud: 6.249450, longitud: -75.576293 },
-            { id: 32, nombre: 'Sabores de La Sierra', latitud: 6.253209, longitud: -75.578190 },
-            { id: 33, nombre: 'Sazón Paisa', latitud: 6.248211, longitud: -75.580045 },
-            { id: 34, nombre: 'La Fonda del Norte', latitud: 6.245788, longitud: -75.563456 },
-            { id: 35, nombre: 'Parrilladas Los Arrieros', latitud: 6.270290, longitud: -75.582450 },
-            { id: 36, nombre: 'El Sazón Tradicional', latitud: 6.240987, longitud: -75.577543 },
-            { id: 37, nombre: 'El Fogón Paisa', latitud: 6.245112, longitud: -75.581789 },
-            { id: 38, nombre: 'Delicias de la Montaña', latitud: 6.252667, longitud: -75.571290 },
-            { id: 39, nombre: 'Asados La Gloria', latitud: 6.267098, longitud: -75.576423 },
-            { id: 40, nombre: 'Restaurante Doña Clara', latitud: 6.261768, longitud: -75.577899 },
-            { id: 41, nombre: 'Parrilladas Medellín', latitud: 6.247112, longitud: -75.583445 },
-            { id: 42, nombre: 'Fonda La Herradura', latitud: 6.255567, longitud: -75.567890 },
-            { id: 43, nombre: 'Sabores del Norte', latitud: 6.240999, longitud: -75.570675 },
-            { id: 44, nombre: 'El Buen Paladar', latitud: 6.268532, longitud: -75.577312 },
-            { id: 45, nombre: 'La Fonda Campestre', latitud: 6.258770, longitud: -75.578445 },
-            { id: 46, nombre: 'El Parrillero del Sur', latitud: 6.252145, longitud: -75.569432 },
-            { id: 47, nombre: 'El Fogón de la Abuela', latitud: 6.240045, longitud: -75.582345 },
-            { id: 48, nombre: 'Fonda El Carriel', latitud: 6.266870, longitud: -75.584123 },
-            { id: 49, nombre: 'Sabores y Asados', latitud: 6.261234, longitud: -75.579999 },
-            { id: 50, nombre: 'Parrilladas del Valle', latitud: 6.245111, longitud: -75.566789 }
-        ]
+            { id: 1, nombre: 'El Poblado Gourmet', latitud: 6.244203, longitud: -75.581212, image: "media/nomy/images/El Poblado Gourmet.jpg" },
+            { id: 2, nombre: 'Cocina Paisa', latitud: 6.253040, longitud: -75.564573, image: "media/nomy/images/Cocina Paisa.jpg" },
+            { id: 3, nombre: 'La Parrilla del Barrio', latitud: 6.268343, longitud: -75.566273, image: "media/nomy/images/La Parrilla del Barrio.jpg" },
+            { id: 4, nombre: 'Fonda Antioqueña', latitud: 6.256205, longitud: -75.590378, image: "media/nomy/images/Fonda Antioqueña.jpg" },
+            { id: 5, nombre: 'El Rincón Paisa', latitud: 6.239555, longitud: -75.580307, image: "media/nomy/images/El Rincón Paisa.jpg" },
+            { id: 6, nombre: 'Delicias de Medellín', latitud: 6.248340, longitud: -75.558627, image: "media/nomy/images/Delicias de Medellín.jpg" },
+            { id: 7, nombre: 'Asados Doña Rosa', latitud: 6.244865, longitud: -75.574241, image: "media/nomy/images/Asados Doña Rosa.jpg" },
+            { id: 8, nombre: 'La Estancia Campestre', latitud: 6.241251, longitud: -75.582703, image: "media/nomy/images/La Estancia Campestre.jpg" },
+            { id: 9, nombre: 'Brasa y Sabor', latitud: 6.230472, longitud: -75.575583, image: "media/nomy/images/Brasa y Sabor.jpg" },
+            { id: 10, nombre: 'Cocina de Montaña', latitud: 6.255349, longitud: -75.574356, image: "media/nomy/images/Cocina de Montaña.jpg" },
+            { id: 11, nombre: 'El Sabor de la Montaña', latitud: 6.275012, longitud: -75.576786, image: "media/nomy/images/El Sabor de la Montaña.jpg" },
+            { id: 12, nombre: 'Comidas Típicas El Poblado', latitud: 6.239112, longitud: -75.573167, image: "media/nomy/images/Comidas Típicas El Poblado.jpg" },
+            { id: 13, nombre: 'Los Sabores del Sur', latitud: 6.255967, longitud: -75.576000, image: "media/nomy/images/Los Sabores del Sur.jpg" },
+            { id: 14, nombre: 'Parrilla La Candelaria', latitud: 6.238245, longitud: -75.583517, image: "media/nomy/images/Parrilla La Candelaria.jpg" },
+            { id: 15, nombre: 'Sazón Antioqueño', latitud: 6.249036, longitud: -75.577112, image: "media/nomy/images/Sazón Antioqueño.jpg" },
+            { id: 16, nombre: 'Los Arrieros', latitud: 6.262923, longitud: -75.584564, image: "media/nomy/images/Los Arrieros.jpg" },
+            { id: 17, nombre: 'Restaurante La Terraza', latitud: 6.241095, longitud: -75.583709, image: "media/nomy/images/Restaurante La Terraza.jpg" },
+            { id: 18, nombre: 'Parrillada del Norte', latitud: 6.244999, longitud: -75.582010, image: "media/nomy/images/Parrillada del Norte.jpg" },
+            { id: 19, nombre: 'Rancho Medellín', latitud: 6.266010, longitud: -75.568499, image: "media/nomy/images/Rancho Medellín.jpg" },
+            { id: 20, nombre: 'Asados Don Juan', latitud: 6.250099, longitud: -75.571011, image: "media/nomy/images/Asados Don Juan.jpg" },
+            { id: 21, nombre: 'El Mirador del Poblado', latitud: 6.261122, longitud: -75.587653, image: "media/nomy/images/El Mirador del Poblado.jpg" },
+            { id: 22, nombre: 'Mesón de la Plaza', latitud: 6.264678, longitud: -75.580312, image: "media/nomy/images/Mesón de la Plaza.jpg" },
+            { id: 23, nombre: 'Fonda Las Palmas', latitud: 6.259987, longitud: -75.575948, image: "media/nomy/images/Fonda Las Palmas.jpg" },
+            { id: 24, nombre: 'Restaurante La Choza', latitud: 6.243520, longitud: -75.574678, image: "media/nomy/images/Restaurante La Choza.jpg" },
+            { id: 25, nombre: 'La Fonda del Norte', latitud: 6.245788, longitud: -75.563456, image: "media/nomy/images/La Fonda del Norte.jpg" },
+            { id: 26, nombre: 'Parrilladas Los Arrieros', latitud: 6.270290, longitud: -75.582450, image: "media/nomy/images/Parrilladas Los Arrieros.jpg" },
+            { id: 27, nombre: 'El Sazón Tradicional', latitud: 6.240987, longitud: -75.577543, image: "media/nomy/images/El Sazón Tradicional.jpg" },
+            { id: 28, nombre: 'El Fogón Paisa', latitud: 6.245112, longitud: -75.581789, image: "media/nomy/images/El Fogón Paisa.jpg" },
+            { id: 29, nombre: 'Delicias de la Montaña', latitud: 6.252667, longitud: -75.571290, image: "media/nomy/images/Delicias de la Montaña.jpg" },
+            { id: 30, nombre: 'Asados La Gloria', latitud: 6.267098, longitud: -75.576423, image: "media/nomy/images/Asados La Gloria.jpg" },
+            { id: 31, nombre: 'Restaurante Doña Clara', latitud: 6.261768, longitud: -75.577899, image: "media/nomy/images/Restaurante Doña Clara.jpg" },
+            { id: 32, nombre: 'Parrilladas Medellín', latitud: 6.247112, longitud: -75.583445, image: "media/nomy/images/Parrilladas Medellín.jpg" },
+            { id: 33, nombre: 'Fonda La Herradura', latitud: 6.255567, longitud: -75.567890, image: "media/nomy/images/Fonda La Herradura.jpg" },
+            { id: 34, nombre: 'Sabores del Norte', latitud: 6.240999, longitud: -75.570675, image: "media/nomy/images/Sabores del Norte.jpg" },
+            { id: 35, nombre: 'El Buen Paladar', latitud: 6.268532, longitud: -75.577312, image: "media/nomy/images/El Buen Paladar.jpg" },
+            { id: 36, nombre: 'La Fonda Campestre', latitud: 6.258770, longitud: -75.578445, image: "media/nomy/images/La Fonda Campestre.jpg" },
+            { id: 37, nombre: 'El Parrillero del Sur', latitud: 6.252145, longitud: -75.569432, image: "media/nomy/images/El Parrillero del Sur.jpg" },
+            { id: 38, nombre: 'El Fogón de la Abuela', latitud: 6.240045, longitud: -75.582345, image: "media/nomy/images/El Fogón de la Abuela.jpg" },
+            { id: 39, nombre: 'Fonda El Carriel', latitud: 6.266870, longitud: -75.584123, image: "media/nomy/images/Fonda El Carriel.jpg" },
+            { id: 40, nombre: 'Sabores y Asados', latitud: 6.261234, longitud: -75.579999, image: "media/nomy/images/Sabores y Asados.jpg" },
+            { id: 41, nombre: 'Parrilladas del Valle', latitud: 6.245111, longitud: -75.566789, image: "media/nomy/images/Parrilladas del Valle.jpg" },
+            { id: 42, nombre: 'La Fonda del Norte', latitud: 6.245788, longitud: -75.563456, image: "media/nomy/images/La Fonda del Norte.jpg" },
+            { id: 43, nombre: 'Parrilladas Los Arrieros', latitud: 6.270290, longitud: -75.582450, image: "media/nomy/images/Parrilladas Los Arrieros.jpg" },
+            { id: 44, nombre: 'El Sazón Tradicional', latitud: 6.240987, longitud: -75.577543, image: "media/nomy/images/El Sazón Tradicional.jpg" },
+            { id: 45, nombre: 'El Fogón Paisa', latitud: 6.245112, longitud: -75.581789, image: "media/nomy/images/El Fogón Paisa.jpg" },
+            { id: 46, nombre: 'Delicias de la Montaña', latitud: 6.252667, longitud: -75.571290, image: "media/nomy/images/Delicias de la Montaña.jpg" },
+            { id: 47, nombre: 'Asados La Gloria', latitud: 6.267098, longitud: -75.576423, image: "media/nomy/images/Asados La Gloria.jpg" },
+            { id: 48, nombre: 'Restaurante Doña Clara', latitud: 6.261768, longitud: -75.577899, image: "media/nomy/images/Restaurante Doña Clara.jpg" },
+            { id: 49, nombre: 'Parrilladas Medellín', latitud: 6.247112, longitud: -75.583445, image: "media/nomy/images/Parrilladas Medellín.jpg" },
+            { id: 50, nombre: 'Fonda La Herradura', latitud: 6.255567, longitud: -75.567890, image: "media/nomy/images/Fonda La Herradura.jpg" }
+        ];
 
-        // Crear el contenido del popup con la estrella de favorito
-        function createPopupContent(nombre, id) {
-            return `
-                <div>
-                    <h4>${nombre}</h4>
-                    <span id="star-${id}" class="favorite-star" onclick="toggleFavorite(${id})">★</span>
-                </div>
-            `;
-        }
+        restaurante.forEach(restaurant => {
+            L.marker([restaurant.latitud, restaurant.longitud])
+                .addTo(map)
+                .bindPopup(`
+                    <div>
+                        <h4>${restaurant.nombre}</h4>
+                        <img src="${restaurant.image}" alt="${restaurant.nombre}" style="width:100px;height:auto;">
+                        <span id="star-${restaurant.id}" class="favorite-star" onclick="toggleFavorite(${restaurant.id})">★</span>
+                    </div>
+                `);
+        });
 
         // Alternar el estado de favorito
         function toggleFavorite(id) {
             var star = document.getElementById(`star-${id}`);
             star.classList.toggle('active');
         }
-
-        //Crear los marcadores de los restaurantes para mostrar en el mapa
-        for (var i = 0; i < restaurante.length; i++) {
-            L.marker([restaurante[i].latitud, restaurante[i].longitud]).addTo(map).bindPopup(createPopupContent(restaurante[i].nombre, restaurante[i].id));
-        }
-        
 
     </script>
 </body>

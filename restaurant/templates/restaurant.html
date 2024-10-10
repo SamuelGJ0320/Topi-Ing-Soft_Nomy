@@ -27,7 +27,6 @@
             font-size: 24px;
             font-weight: bold;
             color: #494c50;
-
         }
 
         .navbar-nav a {
@@ -134,19 +133,42 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold">{{ recommendation.nombre }}</h5>
                             <p class="card-text">{{ recommendation.descripcion }}</p>
-                            <p class="card-text"><strong>Latitud:</strong> {{ recommendation.latitud }}</p>
-                            <p class="card-text"><strong>Longitud:</strong> {{ recommendation.longitud }}</p>
-                            <p class="card-text"><strong>Longitud:</strong> {{ recommendation.image }}</p>
+                            <p class="card-text"><strong>Dirección:</strong> {{ recommendation.direccion }}</p>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
             </div>
-        {% else %}
-            <p>No hay películas disponibles.</p>
         {% endif %}
+
+        <h2 class="mt-4">Todas los Restaurantes Disponibles:</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for restaurant in restaurants %}
+            <div class="col">
+                <div class="card">
+                    {% if restaurant.image %}
+                        <img src="{{ restaurant.image.url }}" class="card-img-top" alt="{{ restaurant.nombre }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">{{ restaurant.nombre }}</h5>
+                        <p class="card-text">{{ restaurant.descripcion }}</p>
+                        <p class="card-text"><strong>Dirección:</strong> {{ restaurant.direccion }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <h2 class="mt-4">Historial de Búsqueda:</h2>
+        <ul class="list-group">
+            {% for history in histories %}
+                <li class="list-group-item">{{ history.prompt }} - {{ history.timestamp }}</li>
+            {% empty %}
+                <li class="list-group-item">No hay historial de búsqueda disponible.</li>
+            {% endfor %}
+        </ul>
     </div>
-{% endblock %}
+    {% endblock %}
 
     <footer>
         <p>© 2024 Ñomy. Todos los derechos reservados.</p>

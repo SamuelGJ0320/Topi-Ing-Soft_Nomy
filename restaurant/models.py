@@ -1,5 +1,6 @@
 from django.db import models
 import numpy as np
+from django.contrib.auth.models import User
 
 # Create your models here.
 def get_default_array():
@@ -13,6 +14,15 @@ class Restaurant(models.Model):
     longitud = models.CharField(max_length=250)
     image = models.ImageField(upload_to='nomy/images/', default='nomy/images/default.jpeg')
     emb = models.BinaryField(default=get_default_array())
+    direccion = models.CharField(max_length=250, null=True, blank=True)
     
     def __str__(self):
         return self.nombre
+    
+class searchahistory(models.Model):
+   user = models.ForeignKey(User, on_delete=models.CASCADE)
+   query = models.CharField(max_length=250)
+   timestamp = models.DateTimeField(auto_now_add=True)
+
+   def __str__(self):
+      return f"{self.user.username} - {self.query} - {self.timestamp}"
