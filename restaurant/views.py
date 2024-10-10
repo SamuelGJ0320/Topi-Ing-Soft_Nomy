@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from .models import Restaurant
-from openai import OpenAI
+import openai
 import openai
 import numpy as np
 import os
 from dotenv import load_dotenv
 
-load_dotenv('api_keys_2.env')
+load_dotenv('api_keys_1.env')
 api_key = os.getenv('openai_apikey')
 openai.api_key = api_key
 
