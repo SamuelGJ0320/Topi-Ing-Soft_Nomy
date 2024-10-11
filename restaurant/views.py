@@ -1,14 +1,22 @@
 from django.shortcuts import render
+
 from .models import Restaurant
 import openai
+from .models import Restaurant, searchahistory
+
 import openai
 import numpy as np
 import os
 from dotenv import load_dotenv
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 load_dotenv('api_keys_1.env')
 api_key = os.getenv('openai_apikey')
 openai.api_key = api_key
+
+def home(request):
+    return render(request, 'home.html')
 
 # Create your views here.
 def get_embedding(text, client, model="text-embedding-3-small"):
@@ -21,6 +29,9 @@ def cosine_similarity(a, b):
 def restaurant(request):
     if request.method == 'POST':
         prompt = request.POST.get('prompt')
+
+        if request.user.is_authenticated:
+            searchahistory.objects.create(user=request.user, query=prompt)
 
         restaurants = Restaurant.objects.all()
 
