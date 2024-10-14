@@ -134,6 +134,7 @@
                             <h5 class="card-title fw-bold">{{ recommendation.nombre }}</h5>
                             <p class="card-text">{{ recommendation.descripcion }}</p>
                             <p class="card-text"><strong>Dirección:</strong> {{ recommendation.direccion }}</p>
+                            <a href="{% url 'add_review' recommendation.id %}" class="btn btn-secondary">Calificar</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +142,7 @@
             </div>
         {% endif %}
 
-        <h2 class="mt-4">Todas los Restaurantes Disponibles:</h2>
+        <h2 class="mt-4">Todos los Restaurantes Disponibles:</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             {% for restaurant in restaurants %}
             <div class="col">
@@ -153,6 +154,7 @@
                         <h5 class="card-title fw-bold">{{ restaurant.nombre }}</h5>
                         <p class="card-text">{{ restaurant.descripcion }}</p>
                         <p class="card-text"><strong>Dirección:</strong> {{ restaurant.direccion }}</p>
+                        <a href="{% url 'add_review' restaurant.id %}" class="btn btn-secondary">Calificar</a>
                     </div>
                 </div>
             </div>
@@ -162,7 +164,7 @@
         <h2 class="mt-4">Historial de Búsqueda:</h2>
         <ul class="list-group">
             {% for history in histories %}
-                <li class="list-group-item">{{ history.prompt }} - {{ history.timestamp }}</li>
+                <li class="list-group-item">{{ history.query }} - {{ history.timestamp }}</li>
             {% empty %}
                 <li class="list-group-item">No hay historial de búsqueda disponible.</li>
             {% endfor %}
