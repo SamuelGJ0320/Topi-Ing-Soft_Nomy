@@ -16,14 +16,15 @@
             margin: 0;
             padding: 0;
             height: 100%;
+           
         }
-
         header {
             background-color: #f8f9fa;
-            padding: 10px;
+            padding: 5px; /* Reduce el padding a 5px */
             z-index: 1000; 
             position: relative;
         }
+
 
         #hero {
             padding: 0;
@@ -32,7 +33,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: calc(100vh - 120px); 
+            height: calc(100vh - 90px); 
         }
 
         #mi_mapa {
@@ -48,11 +49,11 @@
         }
         /* color de borde del prompt*/
         .search-input { 
-            padding: 10px;
+            padding-bottom: 110px;
             width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 20px;
+            border: 1px solid #b8d1b5;
+            border-radius: 0px;
+            font-size: 24px;
             text-align: center;
         }
 
@@ -73,14 +74,54 @@
             position: relative;
             z-index: 1000;
         }
+        .logo {
+            
+            width: 300px; /* Ajusta el tamaño de la imagen */
+            height: 200px; /* Mantiene la proporción de la imagen */
+            margin-bottom: 0;
+        }
+        .contenedor {
+            display: flex; /* Mantiene el modelo de caja flexible */
+            flex-direction: column; /* Cambia la dirección a columna para apilar elementos */
+            align-items: flex-start; /* Alinea los elementos a la izquierda */
+        }
+
+.nav-container {
+    margin-bottom: 0px;/* Agrega un margen inferior para separar de los botones */
+    margin-top:-40px; 
+}
+
+.auth-buttons {
+    margin-top: 3%; /* Empuja los botones hacia abajo */
+    display: inline-table; /* Asegúrate de que los botones se alineen en fila */
+    gap: 10px; /* Espacio entre botones */
+}
+
+.auth-buttons button {
+    background-color: #78d98f; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+.auth-buttons button:hover {
+    background-color: #66c57a; /* Cambia el color al pasar el mouse */
+}
+
+            
     </style>
 </head>
 
 <body>
+    {% load static %}
     <header>
         <div class="contenedor">
-            <p class="logo">Ñomy</p>
-            <nav>
+            <img class="logo" src="{% static 'images/logo.png' %}"alt="Nomy Logo">
+
+            <nav class="nav-container">
                 <a href="http://127.0.0.1:8000/">Home</a>
                 <a href="#">Cuenta</a>
                 <a href="#">Soporte</a>
