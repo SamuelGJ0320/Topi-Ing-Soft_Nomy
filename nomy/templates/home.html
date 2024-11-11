@@ -20,11 +20,21 @@
         }
         header {
             background-color: #f8f9fa;
-            padding: 5px; /* Reduce el padding a 5px */
+            padding: 0px; 
             z-index: 1000; 
             position: relative;
+    
         }
 
+        .btn {
+            background-color: #78d98f;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
         #hero {
             padding: 0;
@@ -47,10 +57,10 @@
             margin-top: 0px; 
             width: 100%;
         }
-        /* color de borde del prompt*/
+
         .search-input { 
-            padding-bottom: 110px;
-            width: 100%;
+            padding-bottom: 30px;
+            width: 10%;
             border: 1px solid #b8d1b5;
             border-radius: 0px;
             font-size: 24px;
@@ -76,39 +86,39 @@
         }
         .logo {
             
-            width: 300px; /* Ajusta el tamaño de la imagen */
-            height: 200px; /* Mantiene la proporción de la imagen */
+            width: 300px; 
+            height: 200px; 
             margin-bottom: 0;
         }
         .contenedor {
-            display: flex; /* Mantiene el modelo de caja flexible */
-            flex-direction: column; /* Cambia la dirección a columna para apilar elementos */
-            align-items: flex-start; /* Alinea los elementos a la izquierda */
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-start; 
         }
 
 .nav-container {
-    margin-bottom: 0px;/* Agrega un margen inferior para separar de los botones */
+    margin-bottom: 0px;
     margin-top:-40px; 
 }
 
 .auth-buttons {
-    margin-top: 3%; /* Empuja los botones hacia abajo */
-    display: inline-table; /* Asegúrate de que los botones se alineen en fila */
-    gap: 10px; /* Espacio entre botones */
+    margin-top: 3%; 
+    display: inline-table; 
+    gap: 10px; 
 }
 
 .auth-buttons button {
-    background-color: #78d98f; /* Cambia el color de fondo del botón */
-    color: white; /* Cambia el color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    padding: 10px 15px; /* Espaciado interno del botón */
-    border-radius: 5px; /* Esquinas redondeadas */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s; /* Suaviza el cambio de color al pasar el mouse */
+    background-color: #78d98f; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .auth-buttons button:hover {
-    background-color: #66c57a; /* Cambia el color al pasar el mouse */
+    background-color: #66c57a; 
 }
 
             
@@ -119,19 +129,21 @@
     {% load static %}
     <header>
         <div class="contenedor">
-            <img class="logo" src="{% static 'images/logo.png' %}"alt="Nomy Logo">
+            <img class="logo" src="{% static 'images/logo.png' %}"alt="Nomy Logo" style="width: 200px; height: auto;">
 
             <nav class="nav-container">
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="#">Cuenta</a>
-                <a href="#">Soporte</a>
-                <a href="http://127.0.0.1:8000/restaurant/">Restaurantes</a>
+                <a href="{% url 'report' %}">Soporte</a>
+                <a href="{% url 'restaurant'  %}">Restaurantes</a>
             </nav>
 
             <div class="auth-buttons">
-                <button onclick="window.location.href='http://127.0.0.1:8000/login/'">Iniciar Sesión</button>
-                <button onclick="window.location.href='http://127.0.0.1:8000/register'">Registrarse</button>
-                <a href="{% url 'logout' %}"><button type="button">Cerrar Sesión</button></a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}"><button type="button">Cerrar Sesión</button></a>
+                {% else %}
+                    <button onclick="window.location.href='http://127.0.0.1:8000/login/'">Iniciar Sesión</button>
+                    <button onclick="window.location.href='http://127.0.0.1:8000/register'">Registrarse</button>
+                {% endif %}
             </div>
         </div>
     </header>

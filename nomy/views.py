@@ -4,6 +4,9 @@ from .models import Nomy
 from .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+import os
+from twilio.rest import Client
+from dotenv import load_dotenv
 
 # Create your views here.
 
@@ -58,3 +61,29 @@ def register(request):
 
     context = {'form': form}
     return render(request,'register.html', context)
+
+load_dotenv('api_keys_2.env')
+
+account_sid = os.getenv('TWILIO_ACCOUNT_SID')
+auth_token = os.getenv('TWILIO_AUTH_TOKEN')
+twilio_number = "whatsapp:+14155238886"
+default_whatsapp_number = "whatsapp:+573217168280" 
+
+client = Client(account_sid, auth_token)
+
+def report(request):
+    if request.method == 'POST':
+        message = request.POST.get('message')
+        
+        try:
+            client.messages.create(
+                body=message,
+                from_=twilio_number,
+                to=default_whatsapp_number
+            )
+            return render(request, 'report.html', {'success': 'Mensaje enviado exitosamente.'})
+        except Exception as e:
+            error_message = str(e)
+            return render(request, 'report.html', {'error': f"Ocurrió un error: {error_message}"})
+    
+    return render(request, 'report.html')

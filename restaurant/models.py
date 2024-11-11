@@ -35,7 +35,7 @@ class searchahistory(models.Model):
 class Review(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    rating = models.IntegerField(default=0)  # Calificación de 1 a 5
+    rating = models.IntegerField(default=0)  
     comment = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
