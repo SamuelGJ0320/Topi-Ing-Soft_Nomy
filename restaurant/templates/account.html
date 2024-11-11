@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card-header {
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #5a67d8;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            color: #555;
+        }
+        .list-group-item {
+            border: none;
+            padding-left: 0;
+        }
+        .rating {
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        .timestamp {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'home' %}">Volver a Home</a>
+    </nav>
+
+<div class="container">
+    <h2 class="section-title">Mi Historial de Búsqueda</h2>
+    <div class="card">
+        <div class="card-header">
+            Historial de Búsqueda
+        </div>
+        <div class="card-body">
+            {% if search_history %}
+                <ul class="list-group">
+                    {% for item in search_history %}
+                        <li class="list-group-item">
+                            <span>{{ item.query }}</span>
+                            <span class="timestamp float-right">{{ item.timestamp|date:"d M, Y H:i" }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="text-muted">No hay historial de búsqueda.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <h2 class="section-title">Mis Reseñas</h2>
+    <div class="card">
+        <div class="card-header">
+            Reseñas
+        </div>
+        <div class="card-body">
+            {% if reviews %}
+                <ul class="list-group">
+                    {% for review in reviews %}
+                        <li class="list-group-item">
+                            <h5 class="mb-1">{{ review.restaurant.nombre }}</h5>
+                            <span class="rating">{{ review.rating }} / 5</span>
+                            <p class="mb-1">{{ review.comment }}</p>
+                            <small class="timestamp">{{ review.created_at|date:"d M, Y H:i" }}</small>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="text-muted">No has dejado ninguna reseña.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

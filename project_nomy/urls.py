@@ -16,6 +16,8 @@ urlpatterns = [
     path('logout/', project_Nomy.logoutUser, name='logout'),
     path('restaurant/', include('restaurant.urls')),
     path('report/', project_Nomy.report, name='report'),
+    path('account/', include('restaurant.urls')),
+    path('reservation/', include('restaurant.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

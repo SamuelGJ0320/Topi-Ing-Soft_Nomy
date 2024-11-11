@@ -98,10 +98,10 @@
                             <a class="nav-link" href="http://127.0.0.1:8000/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cuenta</a>
+                            <a class="nav-link" href="{% url 'account' %}">Cuenta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Soporte</a>
+                            <a class="nav-link" href="{% url 'report' %}">Soporte</a>
                         </li>
                     </ul>
                 </div>
@@ -112,7 +112,6 @@
     {% block content %}
     <div class="container">
 
-        <!-- Mensajes de Éxito y Error -->
         {% if messages %}
             {% for message in messages %}
                 <div class="alert {% if message.tags %}alert-{{ message.tags }}{% else %}alert-info{% endif %} alert-dismissible fade show" role="alert">
@@ -149,6 +148,7 @@
                                 <strong>Calificación promedio:</strong> {{ recommendation.average_rating|floatformat:1 }}/5
                             </p>
                             <a href="{% url 'add_review' recommendation.id %}" class="btn btn-secondary">Calificar</a>
+                            <a href="#" class="btn btn-secondary">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -172,20 +172,12 @@
                             <strong>Calificación promedio:</strong> {{ restaurant.average_rating|floatformat:1 }}/5
                         </p>
                         <a href="{% url 'add_review' restaurant.id %}" class="btn btn-secondary">Calificar</a>
+                        <a href="{% url 'reservation' %}" class="btn btn-secondary">Reservar</a>
                     </div>
                 </div>
             </div>
             {% endfor %}
         </div>
-
-        <h2 class="mt-4">Historial de Búsqueda:</h2>
-        <ul class="list-group">
-            {% for history in histories %}
-                <li class="list-group-item">{{ history.query }} - {{ history.timestamp }}</li>
-            {% empty %}
-                <li class="list-group-item">No hay historial de búsqueda disponible.</li>
-            {% endfor %}
-        </ul>
     </div>
     {% endblock %}
 

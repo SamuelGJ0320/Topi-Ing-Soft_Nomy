@@ -41,3 +41,14 @@ class Review(models.Model):
 
     def __str__(self):
         return f'Review by {self.user.username} for {self.restaurant.nombre}'
+    
+class Reservation(models.Model):
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    reservation_time = models.DateTimeField()
+    number_of_people = models.IntegerField()
+    special_requests = models.TextField(blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'Reserva para {self.user.username} en {self.restaurant.nombre} el {self.reservation_time}'
