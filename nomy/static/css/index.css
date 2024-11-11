@@ -68,15 +68,10 @@ header {
 
 header .logo {
     margin: 0;
-    padding: 10px 15px;
+    padding: 25px 30px;
     font-weight: bold;
     color: blueviolet;
     font-size: 1.6em;
-}
-
-header .logo img {
-    width: 50px;
-    height: auto;
 }
 
 header .container {

@@ -4,9 +4,6 @@ from .models import Nomy
 from .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-import os
-from twilio.rest import Client
-from dotenv import load_dotenv
 
 # Create your views here.
 
@@ -66,8 +63,8 @@ load_dotenv('api_keys_2.env')
 
 account_sid = os.getenv('TWILIO_ACCOUNT_SID')
 auth_token = os.getenv('TWILIO_AUTH_TOKEN')
-twilio_number = os.getenv('TWILIO_PHONE_NUMBER')
-default_whatsapp_number = os.getenv('DEFAULT_WHATSAPP')
+twilio_number = "whatsapp:+14155238886"
+default_whatsapp_number = "whatsapp:+573217168280" 
 
 client = Client(account_sid, auth_token)
 
