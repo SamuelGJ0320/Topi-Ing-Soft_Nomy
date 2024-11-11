@@ -2,9 +2,8 @@ from django.db import models
 import numpy as np
 from django.contrib.auth.models import User
 
-# Create your models here.
 def get_default_array():
-    default_arr = np.random.rand(1536)  # Adjust this to your desired default array
+    default_arr = np.random.rand(1536)
     return default_arr.tobytes()
 
 class Restaurant(models.Model):
@@ -18,6 +17,12 @@ class Restaurant(models.Model):
 
     def __str__(self):
         return self.nombre
+
+    def average_rating(self):
+        reviews = self.reviews.all()
+        if reviews.exists():
+            return sum([review.rating for review in reviews]) / reviews.count()
+        return 0
 
 class searchahistory(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

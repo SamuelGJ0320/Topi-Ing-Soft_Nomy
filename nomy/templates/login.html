@@ -68,6 +68,14 @@
             padding: 10px;
             margin-top: 10px;
         }
+        #login_message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #f5c6cb;
+        }
     </style>
 </head>
 
@@ -117,8 +125,13 @@
                     <p id="messages">
                         {{ message }}
                     </p>
-
                 {% endfor %}
+
+                {% if not user.is_authenticated %}
+                    <div id="login_message">
+                        Debes iniciar sesión para continuar con la operación.
+                    </div>
+                {% endif %}
 
                 <div class="mt-4">
                     <div class="d-flex justify-content-center links">
