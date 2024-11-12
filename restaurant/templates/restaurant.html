@@ -148,7 +148,7 @@
                                 <strong>Calificación promedio:</strong> {{ recommendation.average_rating|floatformat:1 }}/5
                             </p>
                             <a href="{% url 'add_review' recommendation.id %}" class="btn btn-secondary">Calificar</a>
-                            <a href="#" class="btn btn-secondary">Reservar</a>
+                            <a href="{% url 'reservation' %}" class="btn btn-secondary">Reservar</a>
                         </div>
                     </div>
                 </div>
