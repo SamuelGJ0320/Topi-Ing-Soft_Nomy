@@ -9,15 +9,15 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', project_Nomy.home, name='home'),
     path('about/', project_Nomy.about, name='about'),
-    path('login/', project_Nomy.loginPage, name='login'),
+    # path('login/', project_Nomy.loginPage, name='login'),
     path('register/', project_Nomy.register, name='register'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('map/', project_Nomy.map, name='map'),
     path('logout/', project_Nomy.logoutUser, name='logout'),
     path('restaurant/', include('restaurant.urls')),
     path('report/', project_Nomy.report, name='report'),
-    path('account/', include('restaurant.urls')),
-    path('reservation/', include('restaurant.urls')),
+    # path('account/', include('restaurant.urls')),
+    # path('reservation/', include('restaurant.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

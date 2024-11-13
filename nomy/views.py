@@ -34,7 +34,7 @@ def loginPage(request):
 
         if user is not None:
             login(request, user)
-            return redirect('http://127.0.0.1:8000/')
+            return redirect('home')
         
         else:
             messages.info(request,'Username OR password is incorrect')
@@ -43,7 +43,7 @@ def loginPage(request):
 
 def logoutUser(request):
     logout(request)
-    return redirect('http://127.0.0.1:8000/login/')
+    return redirect('home')
 
 def register(request):
     form = CreateUserForm()
@@ -55,7 +55,7 @@ def register(request):
             user = form.cleaned_data.get('username')
             messages.success(request,'Account was created for ' + user)
 
-            return redirect('http://127.0.0.1:8000/login/')
+            return redirect('home')
 
 
 
