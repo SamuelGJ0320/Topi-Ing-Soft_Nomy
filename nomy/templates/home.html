@@ -27,7 +27,7 @@
         }
 
         .btn {
-            background-color: #78d98f;
+            background-color: #16b0df;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -85,7 +85,6 @@
             z-index: 1000;
         }
         .logo {
-            
             width: 300px; 
             height: 200px; 
             margin-bottom: 0;
@@ -119,6 +118,19 @@
 
 .auth-buttons button:hover {
     background-color: #66c57a; 
+}
+
+.locate-button {
+    font-size: 14px;
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    color: black; /* Cambia el color del texto */
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.locate-button:hover {
+    background-color: #0056b3;
 }
 
             
@@ -155,11 +167,11 @@
     </header>
 
     <section id="hero">
-        <div id="mi_mapa"></div> <!-- Mapa dinámico dentro de la sección -->
-        <div id="search-bar">
+        <div id="mi_mapa"></div> 
+        <!-- <div id="search-bar">
             <input type="text" id="search-bar" placeholder="What do you want to eat today?" class="search-input" onkeyup="searchRestaurants()">
-        </div>
-    </section>
+        </div> -->
+    </section> 
 
     <footer>
         <p>© 2024 Ñomy. Todos los derechos reservados.</p>
@@ -177,7 +189,7 @@
         // Estructura marcador: L.marker([--Coordenadas--]).addTo(map).bindPopup("--Texto--").openPopup();
         //Lista de restaurantes con coordenadas, donde cada restaurante es un diccionario con las claves 'id', 'nombre', 'latitud' y 'longitud'
         var restaurante = [
-            { id: 1, nombre: 'El Poblado Gourmet', latitud: 6.244203, longitud: -75.581212, image: "media/nomy/images/El Poblado Gourmet.jpg" },
+            { id: 1, nombre: 'El Poblado Gourmet', latitud: 6.244203, longitud: -75.581212, image: "media/nomy/images/El Poblado Gourmet.jpg"},
             { id: 2, nombre: 'Cocina Paisa', latitud: 6.253040, longitud: -75.564573, image: "media/nomy/images/Cocina Paisa.jpg" },
             { id: 3, nombre: 'La Parrilla del Barrio', latitud: 6.268343, longitud: -75.566273, image: "media/nomy/images/La Parrilla del Barrio.jpg" },
             { id: 4, nombre: 'Fonda Antioqueña', latitud: 6.256205, longitud: -75.590378, image: "media/nomy/images/Fonda Antioqueña.jpg" },
@@ -229,14 +241,29 @@
             { id: 50, nombre: 'Fonda La Herradura', latitud: 6.255567, longitud: -75.567890, image: "media/nomy/images/Fonda La Herradura.jpg" }
         ];
 
+        // obtener id del restaurante
+        const restaurantId = "{{ restaurante.id }}";
+
+        // Obtener las urls para incluir en el popup de cada restaurante
+        const reservationUrl = "{% url 'reservation' %}";
+
+        const foodIcon = L.icon({
+            iconUrl: "media/nomy/images/food-icon.png",
+            iconSize: [50, 50],
+            iconAnchor: [25, 50],
+            popupAnchor: [0, -50],
+        })
+
         restaurante.forEach(restaurant => {
-            L.marker([restaurant.latitud, restaurant.longitud])
+            L.marker([restaurant.latitud, restaurant.longitud], { icon: foodIcon })
                 .addTo(map)
                 .bindPopup(`
                     <div>
                         <h4>${restaurant.nombre}</h4>
                         <img src="${restaurant.image}" alt="${restaurant.nombre}" style="width:100px;height:auto;">
                         <span id="star-${restaurant.id}" class="favorite-star" onclick="toggleFavorite(${restaurant.id})">★</span>
+                        <a href="${reservationUrl}" class= "btn btn-primary btn-lg" style="width: 100%; text-align: center;">Reservar</a>
+                        
                     </div>
                 `);
         });
@@ -246,6 +273,72 @@
             var star = document.getElementById(`star-${id}`);
             star.classList.toggle('active');
         }
+
+
+        const userIcon = L.icon({
+            iconUrl: "media/nomy/images/user-icon.png",
+            iconSize: [50, 50],
+            iconAnchor: [25, 50],
+            popupAnchor: [0, -50],
+        });
+
+        // Función para obtener la ubicación del usuario
+        function locateUser() {
+            if (navigator.geolocation) {
+                // Solicitar la ubicación del usuario
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        // Obtener la latitud y longitud del usuario
+                        const userLat = position.coords.latitude;
+                        const userLon = position.coords.longitude;
+
+                        // Marcador para ubicacióon de usuario
+                        const userMarker = L.marker([userLat, userLon], {icon : userIcon}).addTo(map)
+                            .bindPopup('¡Estás aquí!')
+                            .openPopup();
+
+                        // Centrar el mapa en la ubicación del usuario
+                        map.setView([latitude, longitude], 14);
+                    },
+                    (error) => {
+                        switch (error.code) {
+                            case error.PERMISSION_DENIED:
+                                alert("No diste permiso para acceder a tu ubicación.");
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                alert("No se pudo determinar tu ubicación.");
+                                break;
+                            case error.TIMEOUT:
+                                alert("La solicitud de ubicación ha expirado.");
+                                break;
+                            default:
+                                alert("Ocurrió un error desconocido.");
+                        }
+                    }
+                );
+            } else {
+                alert("Tu navegador no soporta la geolocalización.");
+            }
+        }
+
+        // Agregar un botón al mapa para ubicar al usuario
+        /* const locateButton = L.control({ position: 'topleft' });
+
+        locateButton.onAdd = function (map) {
+            const button = L.DomUtil.create('button', 'locate-button');
+            button.innerHTML = "📍 Mi ubicación";
+            button.style.backgroundColor = 'white';
+            button.style.border = 'none';
+            button.style.cursor = 'pointer';
+            button.style.padding = '6px';
+            button.addEventListener('click', locateUser);
+            return button;
+        };
+
+        locateButton.addTo(map); */ 
+
+        // Llamar automáticamente a locateUser al cargar la página
+        document.addEventListener('DOMContentLoaded', locateUser);
 
     </script>
 </body>

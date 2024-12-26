@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from .models import Nomy
+from restaurant.models import Restaurant
 from .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -11,12 +12,19 @@ from twilio.rest import Client
 # Create your views here.
 
 def home(request):
+    if request.user.is_authenticated:
+        username = request.user.username
+    else:
+        "Usuario anónimo"
+
+    restaurants = Restaurant.objects.all()
+
     searchTerm = request.GET.get('searchNomy')
     if searchTerm:
         nomys = Nomy.objects.filter(title__icontains=searchTerm)
     else:
         nomys = Nomy.objects.all()
-    return render(request,'home.html', {'searchTerm':searchTerm, 'nomys': nomys})
+    return render(request,'home.html', {'searchTerm':searchTerm, 'nomys': nomys, 'restaurants': restaurants})
 
 def about(request):
     return render(request,'about.html')
