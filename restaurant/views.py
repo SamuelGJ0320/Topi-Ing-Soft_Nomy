@@ -2,9 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Restaurant, searchahistory, Review, Reservation
-from .strategies import EmbeddingStrategy
+from .recommender_provider import RecommenderProvider  # Nuevo import
 import openai
-import numpy as np
 import os
 from dotenv import load_dotenv
 from twilio.rest import Client
@@ -18,23 +17,26 @@ openai.api_key = api_key
 def home(request):
     return render(request, 'home.html')
 
-#Desacoplamiento del procesamiento de los embeddings que se encontraba en la funcion restaurant
 def restaurant(request):
     if request.method == 'POST':
         prompt = request.POST.get('prompt')
 
         if request.user.is_authenticated:
             searchahistory.objects.create(user=request.user, query=prompt)
-    
-        restaurants, best_restaurant = EmbeddingStrategy.process_embedings(prompt)
+
+        recommender = RecommenderProvider.get_instance()
+        restaurants, best_restaurant = recommender.get_recommendations(prompt)
 
     else:
         best_restaurant = []
         restaurants = Restaurant.objects.all()
 
-    return render(request, 'restaurant.html', {'restaurants': restaurants, 'recommendations': best_restaurant})
+    return render(request, 'restaurant.html', {
+        'restaurants': restaurants,
+        'recommendations': best_restaurant
+    })
 
-@login_required(login_url='/login/')  # Redirige a la URL de inicio de sesión si el usuario no está autenticado
+@login_required(login_url='/login/')
 def add_review(request, restaurant_id):
     restaurant = get_object_or_404(Restaurant, id=restaurant_id)
 
@@ -56,25 +58,31 @@ def add_review(request, restaurant_id):
         return redirect('restaurant')
 
     rating_range = range(1, 6)
-    return render(request, 'submit_review.html', {'restaurant': restaurant, 'rating_range': rating_range})
+    return render(request, 'submit_review.html', {
+        'restaurant': restaurant,
+        'rating_range': rating_range
+    })
 
-@login_required(login_url='/login/')  # Redirige a la URL de inicio de sesión si el usuario no está autenticado
+@login_required(login_url='/login/')
 def account_view(request):
     search_history = searchahistory.objects.filter(user=request.user).order_by('-timestamp')
     reviews = Review.objects.filter(user=request.user).order_by('-created_at')
-    
-    return render(request, 'account.html', {'search_history': search_history, 'reviews': reviews})
 
-@login_required(login_url='/login/')  # Redirige a la URL de inicio de sesión si el usuario no está autenticado
+    return render(request, 'account.html', {
+        'search_history': search_history,
+        'reviews': reviews
+    })
+
+@login_required(login_url='/login/')
 def reservation(request):
     if request.method == 'POST':
         restaurant_id = request.POST.get('restaurant')
         reservation_time = request.POST.get('reservation_time')
         number_of_people = request.POST.get('number_of_people')
         special_requests = request.POST.get('special_requests')
-        
+
         restaurant = Restaurant.objects.get(id=restaurant_id)
-        
+
         reserva = Reservation.objects.create(
             restaurant=restaurant,
             user=request.user,
@@ -91,7 +99,7 @@ def reservation(request):
     else:
         restaurants = Restaurant.objects.all()
         return render(request, 'reservar.html', {'restaurants': restaurants})
-    
+
 def whatsapp_notification(reservation):
     account_sid = os.getenv('TWILIO_ACCOUNT_SID')
     auth_token = os.getenv('TWILIO_AUTH_TOKEN')
@@ -108,7 +116,6 @@ def whatsapp_notification(reservation):
             to=default_whatsapp_number
         )
     except Exception as e:
-        error_message = str(e)
-        print(f"Ocurrió un error: {error_message}")
+        print(f"Ocurrió un error: {str(e)}")
         return False
     return True
