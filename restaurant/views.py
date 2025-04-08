@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Restaurant, searchahistory, Review, Reservation
+from .strategies import EmbeddingStrategy
 import openai
 import numpy as np
 import os
@@ -17,37 +18,16 @@ openai.api_key = api_key
 def home(request):
     return render(request, 'home.html')
 
-def get_embedding(text, model="text-embedding-ada-002"):
-    text = text.replace("\n", " ")
-    response = openai.Embedding.create(input=[text], model=model)
-    return response['data'][0]['embedding']
-
-def cosine_similarity(a, b):
-    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-
+#Desacoplamiento del procesamiento de los embeddings que se encontraba en la funcion restaurant
 def restaurant(request):
     if request.method == 'POST':
         prompt = request.POST.get('prompt')
 
         if request.user.is_authenticated:
             searchahistory.objects.create(user=request.user, query=prompt)
+    
+        restaurants, best_restaurant = process_embedings(prompt)
 
-        restaurants = Restaurant.objects.all()
-        emb_request = get_embedding(prompt)
-
-        sim = []
-        for i in range(len(restaurants)):
-            emb = restaurants[i].emb
-            emb = list(np.frombuffer(emb))
-            sim.append(cosine_similarity(emb, emb_request))
-        sim = np.array(sim)
-        idx = np.argmax(sim)
-        idx = int(idx)
-
-        if sim[idx] > 0:
-            best_restaurant = [restaurants[idx]]
-        else:
-            best_restaurant = []
     else:
         best_restaurant = []
         restaurants = Restaurant.objects.all()
