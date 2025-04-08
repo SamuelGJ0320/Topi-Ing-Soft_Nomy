@@ -26,7 +26,7 @@ def restaurant(request):
         if request.user.is_authenticated:
             searchahistory.objects.create(user=request.user, query=prompt)
     
-        restaurants, best_restaurant = process_embedings(prompt)
+        restaurants, best_restaurant = EmbeddingStrategy.process_embedings(prompt)
 
     else:
         best_restaurant = []
