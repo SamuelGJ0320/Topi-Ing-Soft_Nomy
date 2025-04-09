@@ -7,6 +7,11 @@ import openai
 import os
 from dotenv import load_dotenv
 from twilio.rest import Client
+from django.views.generic.edit import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
+from .forms import ReservationForm
+
 
 # Cargar las claves de API
 load_dotenv('api_keys_1.env')
@@ -68,38 +73,21 @@ def account_view(request):
     search_history = searchahistory.objects.filter(user=request.user).order_by('-timestamp')
     reviews = Review.objects.filter(user=request.user).order_by('-created_at')
 
-    return render(request, 'account.html', {
-        'search_history': search_history,
-        'reviews': reviews
-    })
+    return render(request, 'account.html', {'search_history': search_history, 'reviews': reviews})
+class ReservationCreateView(LoginRequiredMixin, CreateView):
+    model = Reservation
+    form_class = ReservationForm
+    template_name = 'reservar.html'
+    success_url = reverse_lazy('restaurant')
+    login_url = '/login/' 
 
-@login_required(login_url='/login/')
-def reservation(request):
-    if request.method == 'POST':
-        restaurant_id = request.POST.get('restaurant')
-        reservation_time = request.POST.get('reservation_time')
-        number_of_people = request.POST.get('number_of_people')
-        special_requests = request.POST.get('special_requests')
-
-        restaurant = Restaurant.objects.get(id=restaurant_id)
-
-        reserva = Reservation.objects.create(
-            restaurant=restaurant,
-            user=request.user,
-            reservation_time=reservation_time,
-            number_of_people=number_of_people,
-            special_requests=special_requests
-        )
-
-        whatsapp_notification(reserva)
-
-        messages.success(request, f'Reserva realizada exitosamente en {restaurant.nombre}')
-        return redirect('restaurant')
-
-    else:
-        restaurants = Restaurant.objects.all()
-        return render(request, 'reservar.html', {'restaurants': restaurants})
-
+    def form_valid(self, form):
+        form.instance.user = self.request.user  # Asocia reserva al usuario
+        response = super().form_valid(form)
+        whatsapp_notification(self.object)  # Notificación por WhatsApp
+        messages.success(self.request, f'Reserva realizada exitosamente en {self.object.restaurant.nombre}')
+        return response
+    
 def whatsapp_notification(reservation):
     account_sid = os.getenv('TWILIO_ACCOUNT_SID')
     auth_token = os.getenv('TWILIO_AUTH_TOKEN')

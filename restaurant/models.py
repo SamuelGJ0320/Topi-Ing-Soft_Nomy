@@ -32,23 +32,27 @@ class searchahistory(models.Model):
     def __str__(self):
         return f"{self.user.username} - {self.query} - {self.timestamp}"
 
-class Review(models.Model):
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name='reviews')
+#Review y Reservation compartían campos comunes (restaurant, user, created_at). 
+#Para evitar duplicación de código y mejorar la mantenibilidad del proyecto, se creó un modelo base llamado RestaurantInteraction, del cual ambos modelos heredan.
+class RestaurantInteraction(models.Model):
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    rating = models.IntegerField(default=0)  # Calificación de 1 a 5
-    comment = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        abstract = True  #No crea una tabla para esta clase
+
+class Review(RestaurantInteraction):
+    rating = models.IntegerField(default=0)
+    comment = models.TextField(blank=True)
 
     def __str__(self):
         return f'Review by {self.user.username} for {self.restaurant.nombre}'
-    
-class Reservation(models.Model):
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+class Reservation(RestaurantInteraction):
     reservation_time = models.DateTimeField()
     number_of_people = models.IntegerField()
     special_requests = models.TextField(blank=True, null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f'Reserva para {self.user.username} en {self.restaurant.nombre} el {self.reservation_time}'
